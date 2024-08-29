@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image'
+import { links } from '@/app/lib/data'
 
 export type ProjectType = {
   name: string
@@ -20,3 +21,5 @@ export type TimelineElement = {
   image: StaticImageData
   gpa?: number
 }
+
+export type Section = (typeof links)[number]['label']

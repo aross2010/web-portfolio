@@ -109,7 +109,7 @@ export const interests = [
     icon: PiTennisBallFill,
   },
   {
-    name: 'Weightlifting',
+    name: 'Fitness',
     icon: FaDumbbell,
   },
   {
@@ -389,7 +389,7 @@ export const experiences = [
     image: amc,
     dates: 'Mar. 2021 - Aug. 2022',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cumque quia culpa consequuntur reprehenderit fugiat itaque modi quae beatae placeat perferendis. ',
+      'Managed theatre operations including recruiting and hiring, team scheduling, training, inventory, and team developement.',
   },
   {
     title: 'Software Engineer',
@@ -397,7 +397,7 @@ export const experiences = [
     image: cinefindLogo,
     dates: 'Jun. 2024 - present',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cumque quia culpa consequuntur reprehenderit fugiat itaque modi quae beatae placeat perferendis. ',
+      'Led development overhaul on the company website with Next.js for optimized performance and SEO. In addition, I managed backedn database communication with MongoDB and Flask.',
   },
   {
     title: 'Basketball Instructor',
@@ -405,7 +405,7 @@ export const experiences = [
     image: lifetime,
     dates: 'Jul. 2024 - present',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cumque quia culpa consequuntur reprehenderit fugiat itaque modi quae beatae placeat perferendis. ',
+      'Developed and implemented basketball curriculum for children ages 5-14. Instructed and coached children in basketball fundamentals and team play.',
   },
   {
     title: 'B.S. Software Engineering',
@@ -413,7 +413,7 @@ export const experiences = [
     image: sjsu,
     dates: 'Dec. 2025 (expected)',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cumque quia culpa consequuntur reprehenderit fugiat itaque modi quae beatae placeat perferendis. ',
+      'Gained significant experience leading teams on a diverse range of software development projects using SDLC methodologies.',
     gpa: 3.8,
   },
 ]

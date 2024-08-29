@@ -16,6 +16,12 @@ const config: Config = {
       colors: {
         'sjsu-gold': '#E5A823',
       },
+      screens: {
+        xl: '1250px',
+        lg: '950px',
+        md: '700px',
+        sm: '500px',
+      },
     },
   },
   plugins: [],

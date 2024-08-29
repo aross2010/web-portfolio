@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa6'
+import Button from './button'
 
 type ProjectProps = {
   project: ProjectType
@@ -15,10 +16,10 @@ export default function Project({ project }: ProjectProps) {
       <Image
         src={image}
         alt={name}
-        className="object-cover h-72 object-center rounded-t-lg"
+        className="object-cover object-top lg:h-72 h-56 rounded-t-lg"
       />
       <div className="p-4 flex-col flex flex-grow">
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex lg:flex-row flex-col justify-between lg:items-center gap-2 mb-6">
           <h2 className="text-2xl font-semibold text-white">{name}</h2>
           <ul className="flex items-center gap-1">
             {tech.map((t, i) => {
@@ -41,22 +42,20 @@ export default function Project({ project }: ProjectProps) {
           } gap-2 mt-auto`}
         >
           {link && (
-            <Link
+            <Button
               href={link}
-              target="_blank"
-              className="border-sjsu-gold border text-sjsu-gold hover:bg-sjsu-gold hover:text-white transition-all flex justify-center rounded-md p-2 items-center gap-2"
+              className="w-full !py-2"
             >
               Website <FaExternalLinkAlt />
-            </Link>
+            </Button>
           )}
 
-          <Link
+          <Button
             href={code}
-            target="_blank"
-            className="border-sjsu-gold border text-sjsu-gold hover:bg-sjsu-gold hover:text-white transition-all justify-center rounded-md p-2 flex items-center gap-2"
+            className="w-full !py-2"
           >
             Code <FaGithub />
-          </Link>
+          </Button>
         </div>
       </div>
     </div>

@@ -21,3 +21,12 @@
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f172a",endColorstr="#243560",GradientType=1);
 }
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

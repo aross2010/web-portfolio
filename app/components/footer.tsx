@@ -1,4 +1,3 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa6'
 import { footerLinks } from '../lib/data'
 import Link from 'next/link'
 
