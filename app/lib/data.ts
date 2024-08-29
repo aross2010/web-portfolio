@@ -283,7 +283,7 @@ export const projects = [
         alt: 'spotify',
       },
     ],
-    link: 'https://spotlefy-heardle.vercel.app/',
+    link: 'https://spotlefy.vercel.app/',
     code: 'https://github.com/aross2010/spotlefy',
   },
   {
