@@ -406,7 +406,7 @@ export const experiences = [
     image: cinefindLogo,
     dates: 'Jun. 2024 - present',
     description:
-      'Led development overhaul on the company website with Next.js for optimized performance and SEO. In addition, I managed backedn database communication with MongoDB and Flask.',
+      'Led development overhaul on the company website with Next.js for optimized performance and SEO. In addition, I managed backend database communication with MongoDB and Prisma and implemented user authentication.',
   },
   {
     title: 'Basketball Instructor',
