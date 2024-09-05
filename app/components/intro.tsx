@@ -36,7 +36,7 @@ export default function Intro() {
         className="flex flex-col"
       >
         <h1 className="md:text-2xl text-xl mb-6 font-light tracking-wider text-gray-400">
-          Hello! I&apos;m
+          Welcome! I&apos;m
         </h1>
         <h1 className="md:text-7xl text-5xl font-semibold mb-4 flex items-end">
           Alex Ross{' '}

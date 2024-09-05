@@ -38,12 +38,12 @@ export default function IconCard({
     <Link
       href={href}
       target="_blank"
-      className="flex flex-col items-center gap-3 p-2 rounded-lg bg-slate-600/50 hover:bg-slate-500/50 transition-all"
+      className="flex flex-col items-center gap-3 p-2 rounded-lg bg-slate-600/25 hover:bg-slate-500/25 transition-all"
     >
       {cardContent}
     </Link>
   ) : (
-    <div className="flex flex-col items-center gap-3 p-2 rounded-lg bg-slate-600/50 transition-all">
+    <div className="flex flex-col items-center gap-3 p-2 rounded-lg bg-slate-600/25 transition-all">
       {cardContent}
     </div>
   )

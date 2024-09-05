@@ -4,6 +4,7 @@ import {
   FaDumbbell,
   FaPlaneDeparture,
   FaEnvelope,
+  FaBookOpen,
 } from 'react-icons/fa6'
 import { PiTennisBallFill } from 'react-icons/pi'
 import html from '@/public/html.png'
@@ -50,6 +51,8 @@ import amc from '@/public/amc.png'
 import lifetime from '@/public/lifetime.png'
 import sjsu from '@/public/sjsu.png'
 import cinefindLogo from '@/public/cinefind-logo.png'
+import figma from '@/public/figma.png'
+import niners from '@/public/49ers.png'
 
 export const links = [
   {
@@ -105,6 +108,10 @@ export const interests = [
     image: giants,
   },
   {
+    name: 'Football',
+    image: niners,
+  },
+  {
     name: 'Tennis',
     icon: PiTennisBallFill,
   },
@@ -120,6 +127,10 @@ export const interests = [
   {
     name: 'Music',
     image: atcq,
+  },
+  {
+    name: 'Reading',
+    icon: FaBookOpen,
   },
   {
     name: 'Traveling',
@@ -174,19 +185,6 @@ export const skills = [
     image: flask,
   },
   {
-    name: 'React.js',
-    image: react,
-  },
-  {
-    name: 'Next.js',
-    image: next,
-  },
-  {
-    name: 'Tailwind',
-    image: tailwind,
-  },
-
-  {
     name: 'Prisma',
     image: prisma,
   },
@@ -199,14 +197,25 @@ export const skills = [
     image: mysql,
   },
   {
-    name: 'MariaDB',
-    image: maria,
+    name: 'React',
+    image: react,
+  },
+  {
+    name: 'Next.js',
+    image: next,
+  },
+  {
+    name: 'Tailwind',
+    image: tailwind,
+  },
+  {
+    name: 'Figma',
+    image: figma,
   },
   {
     name: 'Postman',
     image: postman,
   },
-
   {
     name: 'Git',
     image: git,
