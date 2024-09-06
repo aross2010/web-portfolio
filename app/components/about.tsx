@@ -61,9 +61,9 @@ export default function About() {
           When I&apos;m not in the classroom or working on projects, I love
           wathching and playing sports and spending days at the movie theatre.
           <br /> <br />
-          Currently, I am seeking an intership for the summer of 2024. While I
+          Currently, I am seeking an internship for the summer of 2024. While I
           have primarily specialized in full-stack development, I am eager to
-          learn new techonologies and processes to further my development as an
+          learn new technologies and processes to further my development as an
           engineer.
         </motion.p>
         <motion.div

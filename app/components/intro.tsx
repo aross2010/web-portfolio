@@ -26,7 +26,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="scroll-mt-24"
+      className="scroll-mt-24 mb-24"
     >
       <motion.div
         initial={{ opacity: 0, x: -25 }}

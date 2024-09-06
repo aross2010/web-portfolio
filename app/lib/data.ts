@@ -330,7 +330,7 @@ export const projects = [
     code: 'https://github.com/aross2010/vinyl-bot',
   },
   {
-    name: 'Cinefind (Personal)',
+    name: 'CineFind (Personal)',
     image: cinefindPersonal,
     description:
       'A web application that allows users to find films catering to their needs, leave reviews and discussion posts, create lists, and play the CineQ movie guessing game.',
@@ -396,7 +396,7 @@ export const experiences = [
     title: 'Operations Manager',
     subtitle: 'AMC Theatres',
     image: amc,
-    dates: 'Mar. 2021 - Aug. 2022',
+    dates: 'Mar. 2022 - Aug. 2022',
     description:
       'Managed theatre operations including recruiting and hiring, team scheduling, training, inventory, and team developement.',
   },
