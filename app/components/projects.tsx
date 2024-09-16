@@ -18,7 +18,7 @@ export default function Projects() {
         <motion.li
           initial={{ opacity: 0, x: i % 2 === 0 ? -25 : 25 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.4, delay: 0.25 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
           viewport={{ once: true }}
           className="md:block hidden"
         >
@@ -27,7 +27,7 @@ export default function Projects() {
         <motion.li
           initial={{ opacity: 0, x: -25 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.4, delay: 0.25 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
           viewport={{ once: true }}
           className="md:hidden block"
         >
@@ -52,14 +52,14 @@ export default function Projects() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               duration: 0.4,
-              delay: 0.25,
+              delay: 0.5,
             }}
             viewport={{ once: true }}
             className="flex flex-col"
           >
             <Link
               href={'https://github.com/aross2010'}
-              className="h-full bg-slate-700/50 hover:bg-slate-500/50 text-xl text-gray-400 hover:text-white transition-all rounded-lg shadow-xl shadow-slate-800 md:flex hidden flex-col items-center justify-center"
+              className="h-full bg-slate-700 hover:bg-slate-600/50 text-xl text-gray-400 hover:text-white transition-all rounded-lg md:flex hidden flex-col items-center justify-center"
             >
               <h2 className="flex items-center gap-1 font-semibold">
                 ...and more on Github <FaGithub />

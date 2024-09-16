@@ -7,19 +7,19 @@
   background: -moz-linear-gradient(
     180deg,
     rgba(15, 23, 42, 1) 0%,
-    rgba(36, 53, 96, 1) 100%
+    rgba(0, 33, 64, 1) 100%
   );
   background: -webkit-linear-gradient(
     180deg,
     rgba(15, 23, 42, 1) 0%,
-    rgba(36, 53, 96, 1) 100%
+    rgba(0, 33, 64, 1) 100%
   );
   background: linear-gradient(
     180deg,
     rgba(15, 23, 42, 1) 0%,
-    rgba(36, 53, 96, 1) 100%
+    rgba(0, 33, 64, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f172a",endColorstr="#243560",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f172a",endColorstr="#002140",GradientType=1);
 }
 
 .scroll-hide::-webkit-scrollbar {

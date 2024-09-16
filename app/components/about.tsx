@@ -15,7 +15,7 @@ export default function About() {
       <motion.li
         initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: i * 0.05 + 0.25 }}
+        transition={{ duration: 0.4, delay: i * 0.05 + 0.5 }}
         viewport={{ once: true }}
         key={interest.name}
       >
@@ -35,7 +35,7 @@ export default function About() {
         <motion.p
           initial={{ opacity: 0, x: -25 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.4, delay: 0.25 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
           viewport={{ once: true }}
           className="text-gray-400 text-lg"
         >
@@ -69,7 +69,7 @@ export default function About() {
         <motion.div
           initial={{ opacity: 0, x: 25 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.4, delay: 0.25 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
           viewport={{ once: true }}
           className="justify-center items-center p-4 lg:flex hidden"
         >
@@ -83,7 +83,7 @@ export default function About() {
       <motion.h2
         initial={{ opacity: 0, x: -25 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.4 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
         viewport={{ once: true }}
         className="text-2xl font-semibold tracking-wider text-gray-400 mb-4"
       >

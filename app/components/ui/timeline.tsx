@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { ArcherContainer, ArcherElement } from 'react-archer'
 import { motion } from 'framer-motion'
 import { Fragment } from 'react'
+import { BsFillCaretLeftFill } from 'react-icons/bs'
 
 type TimelineProps = {
   data: TimelineElement[]
@@ -74,13 +75,21 @@ export default function Timeline({ data }: TimelineProps) {
                   x: i % 2 == 0 ? -25 : 25,
                 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, delay: 0.1 }}
+                transition={{ duration: 0.4, delay: 0.25 }}
                 viewport={{ once: true }}
-                className={`p-4 bg-slate-600/50 rounded-lg lg:flex hidden flex-col lg:max-w-[340px] sm:max-w-[70%] shadow-md shadow-slate-800 sm:ml-32 ml-20 ${
+                className={`p-4 relative bg-slate-700 rounded-lg lg:flex hidden flex-col lg:max-w-[340px] sm:max-w-[70%] shadow-md shadow-slate-800 sm:ml-32 ml-20 ${
                   i % 2 == 0 ? 'lg:ml-12' : 'lg:mr-12 lg:ml-auto'
                 } `}
               >
                 {componentContent}
+
+                <BsFillCaretLeftFill
+                  className={`text-slate-700 absolute top-0 mt-4 transform  h-10 w-10 ${
+                    i % 2 !== 0
+                      ? 'left-0 -translate-x-1/2'
+                      : 'right-0 translate-x-1/2 rotate-180'
+                  }`}
+                />
               </motion.div>
               <motion.div
                 initial={{
@@ -88,13 +97,16 @@ export default function Timeline({ data }: TimelineProps) {
                   x: 25,
                 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, delay: 0.1 }}
+                transition={{ duration: 0.4, delay: 0.5 }}
                 viewport={{ once: true }}
-                className={`p-4 bg-slate-600/50 rounded-lg lg:hidden flex flex-col lg:max-w-[340px] sm:max-w-[70%] shadow-md shadow-slate-800 sm:ml-32 ml-20 ${
+                className={`p-4 relative bg-slate-700 rounded-lg lg:hidden flex flex-col lg:max-w-[340px] sm:max-w-[70%] shadow-md shadow-slate-800 sm:ml-32 ml-20 ${
                   i % 2 == 0 ? 'lg:ml-12' : 'lg:mr-12 lg:ml-auto'
                 } `}
               >
                 {componentContent}
+                <BsFillCaretLeftFill
+                  className={`text-slate-700 absolute top-0 mt-4 transform  h-10 w-10 left-0 -translate-x-1/2`}
+                />
               </motion.div>
             </li>
           )

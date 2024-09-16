@@ -17,7 +17,7 @@ export default function Intro() {
         rel="noreferrer"
         className="text-white/50 hover:text-white transition-all"
       >
-        <Icon className="w-7 h-7" />
+        <Icon className="w-6 h-6" />
       </a>
     )
   })
@@ -31,9 +31,8 @@ export default function Intro() {
       <motion.div
         initial={{ opacity: 0, x: -25 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.4, delay: 0.25 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
         viewport={{ once: true }}
-        className="flex flex-col"
       >
         <h1 className="md:text-2xl text-xl mb-6 font-light tracking-wider text-gray-400">
           Welcome! I&apos;m
@@ -48,12 +47,24 @@ export default function Intro() {
           Software Engineering @{' '}
           <span className="text-sjsu-gold">San Jose State University</span>
         </h2>
-        <p className="text-gray-400 text-lg mb-8 lg:w-[50%] md:w-[65%]">
-          I&apos;m currently a software engineering student at San Jose State
-          University with experience in designing and building full-stack
-          applications using modern technologies.
-        </p>
-
+      </motion.div>
+      <motion.p
+        initial={{ opacity: 0, x: -25 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.4, delay: 0.75 }}
+        viewport={{ once: true }}
+        className="text-gray-400 text-lg mb-8 lg:w-[50%] md:w-[65%]"
+      >
+        I&apos;m currently a software engineering student at San Jose State
+        University with experience in designing and building full-stack
+        applications using modern technologies.
+      </motion.p>
+      <motion.div
+        initial={{ opacity: 0, x: -25 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.4, delay: 1 }}
+        viewport={{ once: true }}
+      >
         <Button
           href="/Alex_Ross_Resume.pdf"
           className="md:text-lg group"

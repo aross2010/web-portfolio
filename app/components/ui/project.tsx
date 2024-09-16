@@ -12,7 +12,7 @@ type ProjectProps = {
 export default function Project({ project }: ProjectProps) {
   const { name, image, description, tech, link, code } = project
   return (
-    <div className="rounded-lg bg-slate-600/50 flex flex-col min-h-full flex-grow shadow-xl shadow-slate-800">
+    <div className="rounded-lg bg-slate-700 flex flex-col min-h-full flex-grow">
       <Image
         src={image}
         alt={name}

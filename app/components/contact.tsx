@@ -28,7 +28,7 @@ export default function Contact() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.4, delay: 0.25 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
       >
         <p className="text-center lg:px-48 md:px-32 sm:px-12 text-lg text-gray-400">
           Thank you for checking out my website! If you have any questions or

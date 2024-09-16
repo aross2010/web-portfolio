@@ -37,7 +37,7 @@ export default function Navbar() {
           className={`rounded-full relative transition-all text-gray-400 font-medium px-4 py-1.5 flex ${
             activeSection == label
               ? 'text-white font-medium'
-              : 'hover:bg-slate-600 hover:text-white'
+              : 'hover:bg-slate-700 hover:text-white'
           }`}
         >
           {label}
@@ -63,7 +63,7 @@ export default function Navbar() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
       viewport={{ once: true }}
-      className="md:rounded-full md:w-auto w-full md:p-2 p-4 fixed md:top-6 top-0 left-1/2 transform -translate-x-1/2 sm:bg-slate-700/75 bg-slate-700/50 z-10 backdrop-blur-md"
+      className="md:rounded-full md:w-auto w-full md:p-2 p-4 fixed md:top-6 top-0 left-1/2 transform -translate-x-1/2 sm:bg-slate-800/75 bg-slate-800/50 z-10 backdrop-blur-md"
     >
       <ul
         id="links-container"
