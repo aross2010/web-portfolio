@@ -29,7 +29,7 @@ export default function RootLayout({
       className="bg-gradient !bg-slate-900 scroll-smooth"
     >
       <body
-        className={`${outfit.className} min-h-screen text-gray-50 flex flex-col items-center justify-center`}
+        className={`${outfit.className} min-h-screen text-gray-50 flex flex-col items-center justify-center w-full`}
       >
         <ActiveSectionContextProvider>
           <Navbar />
