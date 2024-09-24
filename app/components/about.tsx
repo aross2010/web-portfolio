@@ -89,7 +89,7 @@ export default function About() {
       >
         Interests
       </motion.h2>
-      <ul className="grid lg:grid-cols-10 sm:grid-cols-5 grid-cols-4 gap-2">
+      <ul className="grid lg:grid-cols-10 grid-cols-5 gap-2">
         {renderedInterests}
       </ul>
     </section>
