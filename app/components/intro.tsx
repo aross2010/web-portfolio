@@ -17,7 +17,7 @@ export default function Intro() {
         rel="noreferrer"
         className="text-white/50 hover:text-white transition-all"
       >
-        <Icon className="w-6 h-6" />
+        <Icon className="w-5 h-5" />
       </a>
     )
   })
@@ -34,18 +34,17 @@ export default function Intro() {
         transition={{ duration: 0.4, delay: 0.5 }}
         viewport={{ once: true }}
       >
-        <h1 className="md:text-2xl text-xl mb-6 font-light tracking-wider text-gray-400">
+        <h1 className="md:text-2xl text-xl sm:mb-6 mb-3 font-light tracking-wider text-gray-400">
           Welcome! I&apos;m
         </h1>
-        <h1 className="md:text-7xl text-5xl font-semibold mb-4 flex items-end">
+        <h1 className="md:text-7xl text-5xl font-bold sm:mb-4 mb-1 flex items-end">
           Alex Ross{' '}
-          <span className="flex items-center gap-3 ml-4 -translate-y-1.5">
+          <span className="flex items-center gap-2 ml-4 -translate-y-1.5">
             {renderedSocials}
           </span>
         </h1>
         <h2 className="lg:text-3xl text-2xl font-semibold text-white/50 mb-8">
-          Software Engineering @{' '}
-          <span className="text-sjsu-gold">San Jose State University</span>
+          Software Engineering @ <span className="text-sjsu-gold">SJSU</span>
         </h2>
       </motion.div>
       <motion.p

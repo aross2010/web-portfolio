@@ -31,7 +31,7 @@ export default function About() {
       className="scroll-mt-24"
     >
       <Header>About Me</Header>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 mb-6">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 mb-8">
         <motion.p
           initial={{ opacity: 0, x: -25 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -39,8 +39,8 @@ export default function About() {
           viewport={{ once: true }}
           className="text-gray-400 text-lg"
         >
-          Hello! My name is Alex and I love designing and building real world
-          applications, which can be seen through my{' '}
+          Hello! My name is Alex and I love designing and building applications
+          that solve real-world problems, which can be seen through my{' '}
           <Link
             href="/#projects"
             className="hover:text-sjsu-gold transition-colors font-semibold"
@@ -58,13 +58,14 @@ export default function About() {
           .
           <br />
           <br />
-          When I&apos;m not in the classroom or working on projects, I love
-          wathching and playing sports and spending days at the movie theatre.
-          <br /> <br />
-          Currently, I am seeking an internship for the summer of 2024. While I
-          have primarily specialized in full-stack development, I am eager to
-          learn new technologies and processes to further my development as an
-          engineer.
+          While I specialize in full-stack application development, I actively
+          seek to expand my knowledge of new and emerging technologies and
+          processes.
+          <br />
+          <br />
+          Currently, I am pursuing internship opportunities for Summer 2025 to
+          gain additional practical experience and collaborate with other
+          like-minded engineers.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, x: 25 }}
@@ -89,7 +90,7 @@ export default function About() {
       >
         Interests
       </motion.h2>
-      <ul className="grid lg:grid-cols-10 grid-cols-5 gap-2">
+      <ul className="grid lg:grid-cols-8 grid-cols-4 gap-2">
         {renderedInterests}
       </ul>
     </section>
