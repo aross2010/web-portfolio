@@ -34,7 +34,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Navbar />
           <ToastContext />
-          <main className="w-full max-w-[1000px] px-3 mt-40 mb-40 flex flex-col gap-32">
+          <main className="w-full max-w-[1000px] px-4 mt-40 mb-40 flex flex-col gap-32">
             {children}
           </main>
           <Footer />
