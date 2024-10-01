@@ -92,6 +92,11 @@ export const socials = [
     icon: FaGithub,
     href: 'https://www.github.com/aross2010',
   },
+  {
+    name: 'Email',
+    icon: FaEnvelope,
+    href: 'mailto:@alex.ross@sjsu.edu',
+  },
 ] as const
 
 export const interests = [
@@ -107,10 +112,10 @@ export const interests = [
     name: 'Baseball',
     image: giants,
   },
-  {
-    name: 'Football',
-    image: niners,
-  },
+  // {
+  //   name: 'Football',
+  //   image: niners,
+  // },
   {
     name: 'Tennis',
     icon: PiTennisBallFill,
@@ -132,10 +137,10 @@ export const interests = [
     name: 'Reading',
     icon: FaBookOpen,
   },
-  {
-    name: 'Traveling',
-    icon: FaPlaneDeparture,
-  },
+  // {
+  //   name: 'Traveling',
+  //   icon: FaPlaneDeparture,
+  // },
 ] as const
 
 export const skills = [
