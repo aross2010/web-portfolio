@@ -20,6 +20,7 @@ export type TimelineElement = {
   description: string
   image: StaticImageData
   gpa?: number
+  link?: string
 }
 
 export type Section = (typeof links)[number]['label']

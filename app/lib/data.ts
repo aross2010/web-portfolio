@@ -408,6 +408,7 @@ export const experiences = [
   {
     title: 'Software Engineer',
     subtitle: 'Cinefind',
+    link: 'https://cinefind.app',
     image: cinefindLogo,
     dates: 'Jun. 2024 - present',
     description:
