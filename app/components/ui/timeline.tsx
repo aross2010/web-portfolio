@@ -31,7 +31,16 @@ export default function Timeline({ data }: TimelineProps) {
               <Fragment>
                 <h3 className="text-gray-400 mb-4">{dates}</h3>
                 <h2 className="font-semibold text-lg">{title}</h2>
-                {link ? <Link href={link}>{sub}</Link> : sub}
+                {link ? (
+                  <Link
+                    href={link}
+                    target="_blank"
+                  >
+                    {sub}
+                  </Link>
+                ) : (
+                  sub
+                )}
 
                 <p className="text-gray-400">{description}</p>
               </Fragment>
