@@ -9,7 +9,7 @@ export default function Footer() {
         href={href}
         target="_blank"
       >
-        <Icon className="text-3xl hover:text-white transition-colors" />
+        <Icon className="text-3xl hover:text-sjsu-gold transition-colors" />
       </Link>
     )
   })

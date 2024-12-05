@@ -59,10 +59,10 @@ export default function Projects() {
           >
             <Link
               href={'https://github.com/aross2010'}
-              className="h-full bg-slate-700 hover:bg-slate-600/50 text-xl text-gray-400 hover:text-white transition-all rounded-lg md:flex hidden flex-col items-center justify-center"
+              className="h-full bg-transparent border border-sjsu-gold font-extrabold text-lg text-sjsu-gold hover:text-white hover:bg-sjsu-gold transition-all rounded-lg md:flex hidden flex-col items-center justify-center"
             >
-              <h2 className="flex items-center gap-1 font-semibold">
-                ...and more on Github <FaGithub />
+              <h2 className="flex items-center gap-1">
+                AND MORE ON GITHUB! <FaGithub />
               </h2>
             </Link>
           </motion.div>

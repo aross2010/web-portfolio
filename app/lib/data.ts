@@ -53,6 +53,10 @@ import sjsu from '@/public/sjsu.png'
 import cinefindLogo from '@/public/cinefind-logo.png'
 import figma from '@/public/figma.png'
 import niners from '@/public/49ers.png'
+import scikit from '@/public/scikit.png'
+import pandas from '@/public/pandas.png'
+import shap from '@/public/shap.png'
+import twitterBot from '@/public/twitter-bot.png'
 
 export const links = [
   {
@@ -145,14 +149,6 @@ export const interests = [
 
 export const skills = [
   {
-    name: 'HTML',
-    image: html,
-  },
-  {
-    name: 'CSS',
-    image: css,
-  },
-  {
     name: 'JavaScript',
     image: javascript,
   },
@@ -176,6 +172,14 @@ export const skills = [
   {
     name: 'SQL',
     image: sql,
+  },
+  {
+    name: 'HTML',
+    image: html,
+  },
+  {
+    name: 'CSS',
+    image: css,
   },
   {
     name: 'Node.js',
@@ -214,12 +218,12 @@ export const skills = [
     image: tailwind,
   },
   {
-    name: 'Figma',
-    image: figma,
+    name: 'Pandas',
+    image: pandas,
   },
   {
-    name: 'Postman',
-    image: postman,
+    name: 'Scikit-learn',
+    image: scikit,
   },
   {
     name: 'Git',
@@ -229,10 +233,104 @@ export const skills = [
 
 export const projects = [
   {
+    name: 'Twitter Bot Detector',
+    image: twitterBot,
+    description:
+      'As the ML engineer of this project, I developed a model to classify Twitter accounts as bots or humans, utilizing advanced data preprocessing, feature selection, and predictive analysis for high accuracy',
+    tech: [
+      {
+        src: python,
+        alt: 'python',
+      },
+      {
+        src: flask,
+        alt: 'flask',
+      },
+      {
+        src: scikit,
+        alt: 'scikit',
+      },
+      {
+        src: pandas,
+        alt: 'pandas',
+      },
+    ],
+    link: null,
+    code: 'https://github.com/aross2010/twitter-bot-detector',
+  },
+  {
+    name: 'Vinyl Bot',
+    image: vinylBot,
+    description:
+      'A set of automated Python scripts that deliver real-time email notifications for desired vinyl record releases, seamlessly integrating with Discogs to track records from your wantlist.',
+    tech: [
+      {
+        src: python,
+        alt: 'python',
+      },
+      {
+        src: jinja,
+        alt: 'jinja',
+      },
+      {
+        src: rpi,
+        alt: 'rpi',
+      },
+      {
+        src: cron,
+        alt: 'cron',
+      },
+      {
+        src: discogs,
+        alt: 'discogs',
+      },
+      {
+        src: reddit,
+        alt: 'reddit',
+      },
+    ],
+    link: null,
+    code: 'https://github.com/aross2010/vinyl-bot',
+  },
+  {
+    name: 'Spotlefy',
+    image: spotlefy,
+    description:
+      'A web application that intergrates the Spotify API to allow users to create and customize their own Heardle games.',
+    tech: [
+      {
+        src: typescript,
+        alt: 'typescript',
+      },
+      {
+        src: react,
+        alt: 'react',
+      },
+      {
+        src: next,
+        alt: 'next',
+      },
+      {
+        src: tailwind,
+        alt: 'tailwind',
+      },
+      {
+        src: vercel,
+        alt: 'vercel',
+      },
+      {
+        src: spotify,
+        alt: 'spotify',
+      },
+    ],
+    link: 'https://spotlefy.vercel.app/',
+    code: 'https://github.com/aross2010/spotlefy',
+  },
+  {
     name: 'Split',
     image: split,
     description:
-      'A web application that allows users to log their workouts and track their progress in the gym through visualized data.',
+      'A full-stack web application for users to log workouts and track progress through dynamic data visualizations.',
     tech: [
       {
         src: typescript,
@@ -265,74 +363,6 @@ export const projects = [
     ],
     link: 'https://splitv1.vercel.app/',
     code: 'https://github.com/aross2010/split',
-  },
-  {
-    name: 'Spotlefy',
-    image: spotlefy,
-    description:
-      'A web application that allow users to customize their own Heardle game with any Spotify playlist or every song from an artist.',
-    tech: [
-      {
-        src: typescript,
-        alt: 'typescript',
-      },
-      {
-        src: react,
-        alt: 'react',
-      },
-      {
-        src: next,
-        alt: 'next',
-      },
-      {
-        src: tailwind,
-        alt: 'tailwind',
-      },
-      {
-        src: vercel,
-        alt: 'vercel',
-      },
-      {
-        src: spotify,
-        alt: 'spotify',
-      },
-    ],
-    link: 'https://spotlefy.vercel.app/',
-    code: 'https://github.com/aross2010/spotlefy',
-  },
-  {
-    name: 'Vinyl Bot',
-    image: vinylBot,
-    description:
-      'A collection of automated python scripts that gives you real-time e-mail notifications when a vinyl record you want releases. Connects to Discogs to seamlessly find records in your wantlist.',
-    tech: [
-      {
-        src: python,
-        alt: 'python',
-      },
-      {
-        src: jinja,
-        alt: 'jinja',
-      },
-      {
-        src: rpi,
-        alt: 'rpi',
-      },
-      {
-        src: cron,
-        alt: 'cron',
-      },
-      {
-        src: discogs,
-        alt: 'discogs',
-      },
-      {
-        src: reddit,
-        alt: 'reddit',
-      },
-    ],
-    link: null,
-    code: 'https://github.com/aross2010/vinyl-bot',
   },
   {
     name: 'CineFind (Personal)',
@@ -368,32 +398,6 @@ export const projects = [
     link: 'https://cinefind.vercel.app/',
     code: 'https://github.com/aross2010/cinefind',
   },
-  {
-    name: 'Weather Analysis',
-    image: temp,
-    description:
-      'C programs that collects, validates, and analyzes weather data from a temperature sensor on a Raspbery Pi microcomputer.',
-    tech: [
-      {
-        src: c,
-        alt: 'c',
-      },
-      {
-        src: rpi,
-        alt: 'rpi',
-      },
-      {
-        src: sql,
-        alt: 'sql',
-      },
-      {
-        src: maria,
-        alt: 'maria',
-      },
-    ],
-    link: null,
-    code: 'https://github.com/aross2010/weather-analysis',
-  },
 ]
 
 export const experiences = [
@@ -403,7 +407,7 @@ export const experiences = [
     image: amc,
     dates: 'Mar. 2022 - Aug. 2022',
     description:
-      'Managed theatre operations including recruiting and hiring, team scheduling, training, inventory, and team developement.',
+      'Managed HR functions such as recruiting, payroll, training, and optimizing team schedules to save $10K+ quarterly',
   },
   {
     title: 'Software Engineer',
@@ -412,7 +416,7 @@ export const experiences = [
     image: cinefindLogo,
     dates: 'Jun. 2024 - present',
     description:
-      'Led development overhaul on the company website with Next.js for optimized performance and SEO. In addition, I managed backend database communication with MongoDB and Prisma and implemented user authentication.',
+      'Led a complete overhaul of the company website using Next.js, boosting performance by 55% and SEO rankings by 33%. Designed and optimized MongoDB database models with Prisma, improving query efficiency by 20% and reducing storage usage by 25%, while implementing secure user authentication',
   },
   {
     title: 'Basketball Instructor',
@@ -420,7 +424,7 @@ export const experiences = [
     image: lifetime,
     dates: 'Jul. 2024 - present',
     description:
-      'Developed and implemented basketball curriculum for children ages 5-14. Instructed and coached children in basketball fundamentals and team play.',
+      'Orchestrated basketball skills programs for children and teens, achieving 25% enrollment growth per eight weeks',
   },
   {
     title: 'B.S. Software Engineering',
@@ -428,8 +432,8 @@ export const experiences = [
     image: sjsu,
     dates: 'Dec. 2025 (expected)',
     description:
-      'Gained significant experience leading teams on a diverse range of software development projects using SDLC methodologies.',
-    gpa: 3.8,
+      'Led diverse teams on various software development projects, utilizing SDLC methodologies to deliver high-quality solutions',
+    gpa: 3.7,
   },
 ]
 

@@ -15,9 +15,9 @@ export default function Intro() {
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="text-white/50 hover:text-white transition-all"
+        className="text-white/50 hover:text-sjsu-gold transition-all"
       >
-        <Icon className="w-5 h-5" />
+        <Icon className="text-2xl" />
       </a>
     )
   })

@@ -58,9 +58,9 @@ export default function About() {
           .
           <br />
           <br />
-          While I specialize in full-stack application development, I actively
-          seek to expand my knowledge of new and emerging technologies and
-          processes.
+          While I specialize in full-stack application development and provide
+          machine learning solutions, I actively seek to expand my knowledge of
+          new and emerging technologies and processes.
           <br />
           <br />
           Currently, I am pursuing internship opportunities for Summer 2025 to
