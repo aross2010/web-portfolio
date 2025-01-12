@@ -40,7 +40,7 @@ export default function About() {
           className="text-gray-400 text-lg"
         >
           Hello! My name is Alex and I love designing and building applications
-          that solve real-world problems, which can be seen through my{' '}
+          that solve real-world problems, which is on display in my{' '}
           <Link
             href="/#projects"
             className="hover:text-sjsu-gold transition-colors font-semibold"
@@ -58,14 +58,21 @@ export default function About() {
           .
           <br />
           <br />
-          While I specialize in full-stack application development and provide
-          machine learning solutions, I actively seek to expand my knowledge of
-          new and emerging technologies and processes.
+          I specialize in full-stack application development and deliver machine
+          learning solutions while continuously learning and new and emerging
+          technologies.
           <br />
           <br />
-          Currently, I am pursuing internship opportunities for Summer 2025 to
-          gain additional practical experience and collaborate with other
-          like-minded engineers.
+          Currently, I am working as a Software Engineer at{' '}
+          <Link
+            href={'https://cinefind.app/'}
+            target="_blank"
+            className="hover:text-sjsu-gold transition-colors font-semibold"
+          >
+            Cinefind
+          </Link>{' '}
+          connecting audiences across the country with free local movie
+          screenings.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, x: 25 }}
