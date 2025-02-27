@@ -13,16 +13,12 @@ export default function About() {
 
   const renderedInterests = interests.map((interest, i) => {
     return (
-      <motion.li
-        initial={{ opacity: 0, y: 25 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: i * 0.05 + 0.5 }}
-        viewport={{ once: true }}
+      <li
         key={interest.name}
         className={`md:w-28 w-20 ${i === interests.length - 1 ? 'mr-2' : ''}`}
       >
         <IconCard {...interest} />
-      </motion.li>
+      </li>
     )
   })
 
@@ -99,7 +95,15 @@ export default function About() {
         gradientColor="#0f172a"
         gradientWidth={25}
       >
-        <ul className="flex gap-2">{renderedInterests}</ul>
+        <motion.ul
+          initial={{ opacity: 0, x: 25 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="flex gap-2"
+        >
+          {renderedInterests}
+        </motion.ul>
       </Marquee>
     </section>
   )
