@@ -24,7 +24,7 @@ export default function Navbar() {
     }
   }, [activeSection, width])
 
-  const renderedLinks = links.map(({ hash, label }) => {
+  const renderedLinks = links.map(({ hash, label }, index) => {
     return (
       <li key={hash}>
         <Link
@@ -34,7 +34,9 @@ export default function Navbar() {
             setActiveSection(label)
             setTimeOfLastClick(Date.now())
           }}
-          className={`rounded-full outline-none relative transition-all text-gray-400 font-medium px-4 py-1.5 flex ${
+          className={`${
+            index === 0 ? 'ml-2' : index === links.length - 1 && 'mr-2'
+          } rounded-full outline-none relative transition-all text-gray-400 font-medium px-4 py-1.5 flex ${
             activeSection == label
               ? 'text-white font-medium'
               : 'hover:bg-slate-700 hover:text-white'
@@ -63,11 +65,11 @@ export default function Navbar() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
       viewport={{ once: true }}
-      className="md:rounded-full md:w-auto w-full max-w-full md:p-2 p-4 fixed md:top-6 top-0 left-1/2 outline-none transform -translate-x-1/2 sm:bg-slate-800/75 bg-slate-800/50 z-10 backdrop-blur-md"
+      className="md:rounded-full md:w-auto w-full max-w-full md:p-2 py-4 fixed md:top-6 top-0 left-1/2 outline-none transform -translate-x-1/2 sm:bg-slate-800/75 bg-slate-800/50 z-10 backdrop-blur-md"
     >
       <ul
         id="links-container"
-        className="flex overflow-x-auto scroll-hide items-center gap-2"
+        className="flex overflow-x-auto scroll-hide items-center sm:gap-2 gap-1"
       >
         {renderedLinks}
       </ul>

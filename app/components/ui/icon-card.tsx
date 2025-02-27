@@ -28,7 +28,7 @@ export default function IconCard({
         Icon && <Icon className="h-10 w-auto text-sjsu-gold" />
       )}
 
-      <p className="text-white/50 line-clamp-1 rounded-lg font-medium text-center text-sm">
+      <p className="text-white/50 line-clamp-1  font-medium text-center text-sm">
         {name}
       </p>
     </Fragment>
@@ -43,7 +43,7 @@ export default function IconCard({
       {cardContent}
     </Link>
   ) : (
-    <div className="flex flex-col items-center gap-3 p-2 rounded-lg bg-slate-700/25 transition-all">
+    <div className="flex flex-col items-center gap-3 overflow-x-hidden p-2 rounded-lg bg-slate-700/25 transition-all">
       {cardContent}
     </div>
   )

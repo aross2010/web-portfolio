@@ -20,7 +20,19 @@ export default function Timeline({ data }: TimelineProps) {
     >
       <ul className="flex flex-col items-center lg:gap-0 gap-12">
         {data.map(
-          ({ title, subtitle, description, dates, image, gpa, link }, i) => {
+          (
+            {
+              title,
+              subtitle,
+              description,
+              dates,
+              image,
+              gpa,
+              link,
+              emphasized,
+            },
+            i
+          ) => {
             const sub = (
               <h3 className={`text-gray-400 mb-2 ${link ? 'underline' : ''}`}>
                 {subtitle}
@@ -74,7 +86,7 @@ export default function Timeline({ data }: TimelineProps) {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.4, delay: 0.1 }}
                     viewport={{ once: true }}
-                    className="sm:h-20 sm:w-20 w-16 h-16 shadow-lg shadow-slate-800 absolute lg:left-1/2 transform lg:-translate-x-1/2 flex items-center justify-center p-2 border-2 border-sjsu-gold rounded-full"
+                    className={`sm:h-20 sm:w-20 w-16 h-16 shadow-slate-800 absolute lg:left-1/2 transform lg:-translate-x-1/2 flex items-center justify-center p-2 border-2 border-sjsu-gold rounded-full`}
                   >
                     <Image
                       src={image}
@@ -99,7 +111,7 @@ export default function Timeline({ data }: TimelineProps) {
                   {componentContent}
 
                   <BsFillCaretLeftFill
-                    className={`text-slate-700 absolute top-0 mt-4 transform  h-10 w-10 ${
+                    className={`absolute text-slate-700 top-0 mt-4 transform h-10 w-10 ${
                       i % 2 !== 0
                         ? 'left-0 -translate-x-1/2'
                         : 'right-0 translate-x-1/2 rotate-180'

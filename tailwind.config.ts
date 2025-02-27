@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         'sjsu-gold': '#E5A823',
+        'sjsu-blue': '#0055A2',
       },
       screens: {
         xl: '1250px',

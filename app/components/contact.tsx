@@ -8,6 +8,7 @@ import { FaPaperPlane } from 'react-icons/fa6'
 import SubmitButton from './ui/submit-button'
 import { useSectionInView } from '../lib/hooks'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function Contact() {
   const { ref } = useSectionInView('Contact', 0.5)
@@ -32,7 +33,15 @@ export default function Contact() {
       >
         <p className="text-center lg:px-48 md:px-32 sm:px-12 text-lg text-gray-400">
           Thank you for checking out my website! If you have any questions or
-          would like to get in touch, feel free to reach out to me.
+          would like to get in touch, feel free to reach out to via the form
+          below, or by{' '}
+          <Link
+            href="mailto:alex.ross@sjsu.edu"
+            className="hover:text-sjsu-gold transition-all font-semibold"
+          >
+            email
+          </Link>
+          .
         </p>
         <form
           id="contact-form"

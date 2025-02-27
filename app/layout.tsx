@@ -26,10 +26,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-gradient !bg-slate-900 scroll-smooth"
+      className="bg-slate-900 scroll-smooth"
     >
       <body
-        className={` ${outfit.className} min-h-screen text-gray-50 flex flex-col items-center justify-center w-full`}
+        className={` ${outfit.className} min-h-screen text-gray-50 flex flex-col items-center justify-center overflow-x-hidden w-full`}
       >
         <ActiveSectionContextProvider>
           <Navbar />

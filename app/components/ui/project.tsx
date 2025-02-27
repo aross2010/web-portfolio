@@ -13,11 +13,15 @@ export default function Project({ project }: ProjectProps) {
   const { name, image, description, tech, link, code } = project
   return (
     <div className="rounded-lg bg-slate-700 flex flex-col min-h-full flex-grow">
-      <Image
-        src={image}
-        alt={name}
-        className="object-cover object-top lg:h-72 h-56 rounded-t-lg"
-      />
+      <div className="relative lg:h-72 h-56 rounded-t-lg flex items-center overflow-hidden bg-slate-950">
+        <Image
+          src={image}
+          alt={name}
+          fill
+          className="object-center object-contain"
+        />
+      </div>
+
       <div className="p-4 flex-col flex flex-grow">
         <div className="flex lg:flex-row flex-col justify-between lg:items-center gap-2 mb-6">
           <h2 className="text-2xl font-semibold text-white">{name}</h2>

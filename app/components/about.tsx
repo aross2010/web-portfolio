@@ -6,6 +6,7 @@ import Link from 'next/link'
 import IconCard from './ui/icon-card'
 import { useSectionInView } from '../lib/hooks'
 import { motion } from 'framer-motion'
+import Marquee from 'react-fast-marquee'
 
 export default function About() {
   const { ref } = useSectionInView('About', 0.5)
@@ -18,6 +19,7 @@ export default function About() {
         transition={{ duration: 0.4, delay: i * 0.05 + 0.5 }}
         viewport={{ once: true }}
         key={interest.name}
+        className={`md:w-28 w-20 ${i === interests.length - 1 ? 'mr-2' : ''}`}
       >
         <IconCard {...interest} />
       </motion.li>
@@ -40,7 +42,7 @@ export default function About() {
           className="text-gray-400 text-lg"
         >
           Hello! My name is Alex and I love designing and building applications
-          that solve real-world problems, which is on display in my{' '}
+          that solve real-world problems, which can be seen in my{' '}
           <Link
             href="/#projects"
             className="hover:text-sjsu-gold transition-colors font-semibold"
@@ -53,26 +55,18 @@ export default function About() {
             className="hover:text-sjsu-gold transition-colors font-semibold"
           >
             {' '}
-            work experience
+            experience
           </Link>
           .
           <br />
           <br />
-          I specialize in full-stack application development and deliver machine
-          learning solutions while continuously learning and new and emerging
-          technologies.
+          I specialize in full-stack application development with a primary tech
+          stack of Python, TypeScript, React, Node.js, and MongoDB.
+          Additionally, I have strong experience in machine learning and a wide
+          range of modern technologies.
           <br />
-          <br />
-          Currently, I am working as a Software Engineer at{' '}
-          <Link
-            href={'https://cinefind.app/'}
-            target="_blank"
-            className="hover:text-sjsu-gold transition-colors font-semibold"
-          >
-            Cinefind
-          </Link>{' '}
-          connecting audiences across the country with free local movie
-          screenings.
+          <br />I especially enjoy building projects with others and
+          continuously learning new technologies.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, x: 25 }}
@@ -93,13 +87,20 @@ export default function About() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.5 }}
         viewport={{ once: true }}
-        className="text-2xl font-semibold tracking-wider text-gray-400 mb-4"
+        className="text-2xl font-medium tracking-wider text-gray-400 mb-4"
       >
         Interests
       </motion.h2>
-      <ul className="grid lg:grid-cols-8 grid-cols-4 gap-2">
-        {renderedInterests}
-      </ul>
+      <Marquee
+        autoFill
+        speed={25}
+        className="w-full overflow-y-hidden"
+        gradient
+        gradientColor="#0f172a"
+        gradientWidth={25}
+      >
+        <ul className="flex gap-2">{renderedInterests}</ul>
+      </Marquee>
     </section>
   )
 }

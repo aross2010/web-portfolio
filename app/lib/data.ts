@@ -57,6 +57,7 @@ import scikit from '@/public/scikit.png'
 import pandas from '@/public/pandas.png'
 import shap from '@/public/shap.png'
 import twitterBot from '@/public/twitter-bot.png'
+import githubBanner from '@/public/git-banner.jpg'
 
 export const links = [
   {
@@ -116,10 +117,10 @@ export const interests = [
     name: 'Baseball',
     image: giants,
   },
-  // {
-  //   name: 'Football',
-  //   image: niners,
-  // },
+  {
+    name: 'Football',
+    image: niners,
+  },
   {
     name: 'Tennis',
     icon: PiTennisBallFill,
@@ -141,10 +142,10 @@ export const interests = [
     name: 'Reading',
     icon: FaBookOpen,
   },
-  // {
-  //   name: 'Traveling',
-  //   icon: FaPlaneDeparture,
-  // },
+  {
+    name: 'Traveling',
+    icon: FaPlaneDeparture,
+  },
 ] as const
 
 export const skills = [
@@ -182,6 +183,14 @@ export const skills = [
     image: css,
   },
   {
+    name: 'React',
+    image: react,
+  },
+  {
+    name: 'Next.js',
+    image: next,
+  },
+  {
     name: 'Node.js',
     image: node,
   },
@@ -206,15 +215,7 @@ export const skills = [
     image: mysql,
   },
   {
-    name: 'React',
-    image: react,
-  },
-  {
-    name: 'Next.js',
-    image: next,
-  },
-  {
-    name: 'Tailwind',
+    name: 'Tailwind CSS',
     image: tailwind,
   },
   {
@@ -398,6 +399,14 @@ export const projects = [
     link: 'https://cinefind.vercel.app/',
     code: 'https://github.com/aross2010/cinefind',
   },
+  {
+    name: 'Additional Projects',
+    image: 'https://opengraph.githubassets.com/1/aross2010/web-portfolio',
+    description:
+      'I am constantly working on new and exciting projects, which some can be seen on my GitHub profile.',
+    tech: [],
+    code: 'https://github.com/aross2010',
+  },
 ]
 
 export const experiences = [
@@ -410,16 +419,17 @@ export const experiences = [
       'Managed HR functions such as recruiting, payroll, training, and optimizing team schedules to save $10K+ quarterly',
   },
   {
-    title: 'Software Engineer',
+    title: 'Founding Engineer',
     subtitle: 'Cinefind',
     link: 'https://cinefind.app',
     image: cinefindLogo,
     dates: 'Jun. 2024 - present',
     description:
-      'Led a complete overhaul of the company website using Next.js, boosting performance by 55% and SEO rankings by 33%. Designed and optimized MongoDB database models with Prisma, improving query efficiency by 20% and reducing storage usage by 25%, while implementing secure user authentication',
+      'Led the development of our technical infrastructure from inception to launch, leveraging Python, Next.js, and MongoDB',
+    emphasized: true,
   },
   {
-    title: 'Basketball Instructor',
+    title: 'Lead Basketball Instructor',
     subtitle: 'Lifetime Activities',
     image: lifetime,
     dates: 'Jul. 2024 - present',
@@ -430,7 +440,7 @@ export const experiences = [
     title: 'B.S. Software Engineering',
     subtitle: 'San Jose State University',
     image: sjsu,
-    dates: 'Dec. 2025 (expected)',
+    dates: 'Dec. 2025',
     description:
       'Led diverse teams on various software development projects, utilizing SDLC methodologies to deliver high-quality solutions',
     gpa: 3.7,
