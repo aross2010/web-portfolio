@@ -405,6 +405,7 @@ export const projects = [
     description:
       'I am constantly working on new and exciting projects, which some can be seen on my GitHub profile.',
     tech: [],
+    link: null,
     code: 'https://github.com/aross2010',
   },
 ]

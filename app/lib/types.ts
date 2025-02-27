@@ -3,7 +3,7 @@ import { links } from '@/app/lib/data'
 
 export type ProjectType = {
   name: string
-  image: StaticImageData
+  image: StaticImageData | string
   description: string
   tech: {
     src: StaticImageData
