@@ -5,6 +5,7 @@ import Navbar from './components/navbar'
 import Footer from './components/footer'
 import ToastContext from './context/toast-context'
 import ActiveSectionContextProvider from './context/section-context'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,6 +40,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </ActiveSectionContextProvider>
+        <Analytics />
       </body>
     </html>
   )

@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-email/components": "^0.0.23",
     "@react-email/tailwind": "^0.1.0",
+    "@vercel/analytics": "^1.5.0",
     "framer-motion": "^11.3.30",
     "next": "14.2.6",
     "react": "^18",
