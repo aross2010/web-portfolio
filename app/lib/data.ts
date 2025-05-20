@@ -58,16 +58,18 @@ import pandas from '@/public/pandas.png'
 import shap from '@/public/shap.png'
 import twitterBot from '@/public/twitter-bot.png'
 import githubBanner from '@/public/git-banner.jpg'
+import pl from '@/public/pl.png'
+import beautifulsoup from '@/public/beautifulsoup.png'
 
 export const links = [
   {
     hash: '#home',
     label: 'Home',
   },
-  {
-    hash: '#about',
-    label: 'About',
-  },
+  // {
+  //   hash: '#about',
+  //   label: 'About',
+  // },
   {
     hash: '#skills',
     label: 'Skills',
@@ -150,10 +152,6 @@ export const interests = [
 
 export const skills = [
   {
-    name: 'JavaScript',
-    image: javascript,
-  },
-  {
     name: 'TypeScript',
     image: typescript,
   },
@@ -165,7 +163,6 @@ export const skills = [
     name: 'Java',
     image: java,
   },
-
   {
     name: 'C',
     image: c,
@@ -183,6 +180,10 @@ export const skills = [
     image: css,
   },
   {
+    name: 'Tailwind CSS',
+    image: tailwind,
+  },
+  {
     name: 'React',
     image: react,
   },
@@ -193,10 +194,6 @@ export const skills = [
   {
     name: 'Node.js',
     image: node,
-  },
-  {
-    name: 'Express.js',
-    image: express,
   },
   {
     name: 'Flask',
@@ -215,16 +212,20 @@ export const skills = [
     image: mysql,
   },
   {
-    name: 'Tailwind CSS',
-    image: tailwind,
-  },
-  {
     name: 'Pandas',
     image: pandas,
   },
   {
     name: 'Scikit-learn',
     image: scikit,
+  },
+  {
+    name: 'BeaitifulSoup',
+    image: beautifulsoup,
+  },
+  {
+    name: 'Vercel',
+    image: vercel,
   },
   {
     name: 'Git',
@@ -237,7 +238,7 @@ export const projects = [
     name: 'Twitter Bot Detector',
     image: twitterBot,
     description:
-      'As the ML engineer of this project, I developed a model to classify Twitter accounts as bots or humans, utilizing advanced data preprocessing, feature selection, and predictive analysis for high accuracy',
+      'Developed a machine learning model and web app to classify Twitter accounts as bots or humans, using custom features, data preprocessing, and predictive analysis for high accuracy.',
     tech: [
       {
         src: python,
@@ -256,6 +257,12 @@ export const projects = [
         alt: 'pandas',
       },
     ],
+    tags: [
+      'Machine Learning',
+      'API Integration',
+      'Model Deployment',
+      'API Design',
+    ],
     link: null,
     code: 'https://github.com/aross2010/twitter-bot-detector',
   },
@@ -263,7 +270,7 @@ export const projects = [
     name: 'Vinyl Bot',
     image: vinylBot,
     description:
-      'A set of automated Python scripts that deliver real-time email notifications for desired vinyl record releases, seamlessly integrating with Discogs to track records from your wantlist.',
+      'Built automated Python scripts to send real-time email alerts for vinyl releases, integrating with the Discogs API to monitor and track wantlist records.',
     tech: [
       {
         src: python,
@@ -290,6 +297,12 @@ export const projects = [
         alt: 'reddit',
       },
     ],
+    tags: [
+      'Automation Engineering',
+      'Third-Party API',
+      'Real-Time Notifications',
+      'Email Alerts',
+    ],
     link: null,
     code: 'https://github.com/aross2010/vinyl-bot',
   },
@@ -297,7 +310,7 @@ export const projects = [
     name: 'Spotlefy',
     image: spotlefy,
     description:
-      'A web application that intergrates the Spotify API to allow users to create and customize their own Heardle games.',
+      'Built a web app using the Spotify API that lets users create custom Heardle-style games by importing their playlists or searching any artist or playlist to generate song snippets for guessing.',
     tech: [
       {
         src: typescript,
@@ -324,6 +337,7 @@ export const projects = [
         alt: 'spotify',
       },
     ],
+    tags: ['Web Development', 'Third-Paty API', 'OAuth Flow', 'Game Design'],
     link: 'https://spotlefy.vercel.app/',
     code: 'https://github.com/aross2010/spotlefy',
   },
@@ -331,7 +345,7 @@ export const projects = [
     name: 'Split',
     image: split,
     description:
-      'A full-stack web application for users to log workouts and track progress through dynamic data visualizations.',
+      'Developed a full-stack web app for logging workouts and tracking fitness progress through interactive charts and data visualizations.',
     tech: [
       {
         src: typescript,
@@ -362,6 +376,12 @@ export const projects = [
         alt: 'vercel',
       },
     ],
+    tags: [
+      'Full-Stack Web Development',
+      'API Design',
+      'Data Visualization',
+      'OAuth Flow',
+    ],
     link: 'https://splitv1.vercel.app/',
     code: 'https://github.com/aross2010/split',
   },
@@ -369,7 +389,7 @@ export const projects = [
     name: 'CineFind (Personal)',
     image: cinefindPersonal,
     description:
-      'A web application that allows users to find films catering to their needs, leave reviews and discussion posts, create lists, and play the CineQ movie guessing game.',
+      'Developed a full-stack web app for film discovery with features like user reviews, discussion forums, custom lists, and a CineQ movie guessing game.',
     tech: [
       {
         src: javascript,
@@ -396,17 +416,40 @@ export const projects = [
         alt: 'tmdb',
       },
     ],
+    tags: [
+      'Full-Stack Web Development',
+      'API Design',
+      'Third-Party API',
+      'Game Design',
+    ],
     link: 'https://cinefind.vercel.app/',
     code: 'https://github.com/aross2010/cinefind',
   },
   {
-    name: 'Additional Projects',
-    image: 'https://opengraph.githubassets.com/1/aross2010/web-portfolio',
+    name: 'Premier League Analysis',
+    image: pl,
     description:
-      'I am constantly working on new and exciting projects, which some can be seen on my GitHub profile.',
-    tech: [],
+      'Wrote Python scripts to scrape public football data from FBref, generated structured datasets, designed a MySQL schema, and performed advanced SQL analysis on team and player performance from the 23–24 season.',
+    tech: [
+      {
+        src: python,
+        alt: 'python',
+      },
+      {
+        src: mysql,
+        alt: 'mysql',
+      },
+      {
+        src: pandas,
+        alt: 'pandas',
+      },
+      {
+        src: beautifulsoup,
+        alt: 'beautifulsoup',
+      },
+    ],
     link: null,
-    code: 'https://github.com/aross2010',
+    code: 'https://github.com/aross2010/premier-league-analysis',
   },
 ]
 
@@ -417,16 +460,47 @@ export const experiences = [
     image: amc,
     dates: 'Mar. 2022 - Aug. 2022',
     description:
-      'Managed HR functions such as recruiting, payroll, training, and optimizing team schedules to save $10K+ quarterly',
+      'Managed HR functions such as recruiting, payroll, training, and optimizing team schedules to save $10K+ quarterly.',
   },
   {
-    title: 'Founding Engineer',
+    title: 'Software Engineer',
     subtitle: 'Cinefind',
     link: 'https://cinefind.app',
+    tech: [
+      {
+        src: python,
+        alt: 'python',
+      },
+      {
+        src: typescript,
+        alt: 'typescript',
+      },
+      {
+        src: next,
+        alt: 'next.js',
+      },
+      {
+        src: react,
+        alt: 'react',
+      },
+      {
+        src: mongodb,
+        alt: 'mongodb',
+      },
+    ],
+    tags: [
+      'Automation Engineering',
+      'Full-Stack Web Development',
+      'API Design',
+      'Third-Party Data',
+      'UX Design',
+      'Real-Time Notifications',
+      'Subscription Billing',
+    ],
     image: cinefindLogo,
     dates: 'Jun. 2024 - present',
     description:
-      'Led the development of our technical infrastructure from inception to launch, leveraging Python, Next.js, and MongoDB',
+      'Built and launched the full technical stack, using Python for web automation and real-time alerts, and Next.js with MongoDB for the web platform.',
     emphasized: true,
   },
   {
@@ -435,16 +509,42 @@ export const experiences = [
     image: lifetime,
     dates: 'Jul. 2024 - present',
     description:
-      'Orchestrated basketball skills programs for children and teens, achieving 25% enrollment growth per eight weeks',
+      'Orchestrated basketball skills programs for children and teens, achieving 25% enrollment growth per eight weeks.',
   },
   {
     title: 'B.S. Software Engineering',
     subtitle: 'San Jose State University',
+    tech: [
+      {
+        src: java,
+        alt: 'java',
+      },
+      {
+        src: python,
+        alt: 'python',
+      },
+      {
+        src: sql,
+        alt: 'sql',
+      },
+      {
+        src: mysql,
+        alt: 'mysql',
+      },
+      {
+        src: c,
+        alt: 'c',
+      },
+      {
+        src: flask,
+        alt: 'flask',
+      },
+    ],
     image: sjsu,
     dates: 'Dec. 2025',
     description:
-      'Led diverse teams on various software development projects, utilizing SDLC methodologies to deliver high-quality solutions',
-    gpa: 3.7,
+      'Led diverse teams on various software development projects, utilizing SDLC methodologies to deliver high-quality solutions.',
+    gpa: 3.8,
   },
 ]
 

@@ -25,7 +25,7 @@ export default function Project({ project }: ProjectProps) {
       <div className="p-4 flex-col flex flex-grow">
         <div className="flex lg:flex-row flex-col justify-between lg:items-center gap-2 mb-6">
           <h2 className="text-2xl font-semibold text-white">{name}</h2>
-          <ul className="flex items-center gap-1">
+          <ul className="flex flex-wrap items-center gap-1">
             {tech.map((t, i) => {
               return (
                 <li key={i}>

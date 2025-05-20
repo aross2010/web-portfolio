@@ -9,6 +9,7 @@ export type ProjectType = {
     src: StaticImageData
     alt: string
   }[]
+  tags?: string[]
   link: string | null
   code: string
 }
@@ -17,6 +18,11 @@ export type TimelineElement = {
   dates: string
   title: string
   subtitle: string
+  tech?: {
+    src: StaticImageData
+    alt: string
+  }[]
+  tags?: string[]
   description: string
   image: StaticImageData
   gpa?: number

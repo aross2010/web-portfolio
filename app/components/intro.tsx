@@ -61,8 +61,8 @@ export default function Intro() {
         >
           Cinefind
         </Link>
-        , a platform connecting audiences across the country to free, local
-        movie screenings.
+        , web platform designed to connect audiences across the country with
+        free, in-theater movie screenings.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, x: -25 }}

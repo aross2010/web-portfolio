@@ -29,7 +29,9 @@ export default function Timeline({ data }: TimelineProps) {
               image,
               gpa,
               link,
+              tags,
               emphasized,
+              tech,
             },
             i
           ) => {
@@ -55,6 +57,22 @@ export default function Timeline({ data }: TimelineProps) {
                 )}
 
                 <p className="text-gray-400">{description}</p>
+
+                {tech && (
+                  <ul className="flex flex-wrap items-center gap-1 mt-4">
+                    {tech.map(({ src, alt }, i) => {
+                      return (
+                        <li key={i}>
+                          <Image
+                            src={src}
+                            alt={alt}
+                            className="h-6 w-auto"
+                          />
+                        </li>
+                      )
+                    })}
+                  </ul>
+                )}
               </Fragment>
             )
 
