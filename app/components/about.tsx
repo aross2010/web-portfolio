@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 import Marquee from 'react-fast-marquee'
 
 export default function About() {
-  const { ref } = useSectionInView('About', 0.5)
+  const { ref } = useSectionInView('Home', 0.5)
 
   const renderedInterests = interests.map((interest, i) => {
     return (
