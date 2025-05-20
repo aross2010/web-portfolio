@@ -235,10 +235,10 @@ export const skills = [
 
 export const projects = [
   {
-    name: 'Twitter Bot Detector',
+    name: 'X/Twitter Bot Detector',
     image: twitterBot,
     description:
-      'Developed a machine learning model and web app to classify Twitter accounts as bots or humans, using custom features, data preprocessing, and predictive analysis for high accuracy.',
+      'Developed a machine learning model and web app to classify X/Twitter accounts as bots or humans, using custom features, data preprocessing, and predictive analysis for high accuracy.',
     tech: [
       {
         src: python,
