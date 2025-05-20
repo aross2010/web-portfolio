@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Fragment>
       <Intro />
-      <About />
+      {/* <About /> */}
       <Skills />
       <Projects />
       <Experience />
