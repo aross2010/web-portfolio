@@ -9,9 +9,8 @@ export type ProjectType = {
     src: StaticImageData
     alt: string
   }[]
-  tags?: string[]
   link: string | null
-  code: string
+  code: string | null
 }
 
 export type TimelineElement = {
@@ -22,7 +21,6 @@ export type TimelineElement = {
     src: StaticImageData
     alt: string
   }[]
-  tags?: string[]
   description: string
   image: StaticImageData
   gpa?: number

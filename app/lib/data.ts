@@ -45,12 +45,11 @@ import reddit from '@/public/reddit.png'
 import discogs from '@/public/discogs.png'
 import rpi from '@/public/rpi.png'
 import vinylBot from '@/public/vinyl-bot.png'
-import temp from '@/public/temp.png'
 import giants from '@/public/giants.png'
 import amc from '@/public/amc.png'
 import lifetime from '@/public/lifetime.png'
 import sjsu from '@/public/sjsu.png'
-import cinefindLogo from '@/public/cinefind-logo.png'
+import cinefindLogoC from '@/public/cinefind-logo-c.png'
 import figma from '@/public/figma.png'
 import niners from '@/public/49ers.png'
 import scikit from '@/public/scikit.png'
@@ -60,6 +59,9 @@ import twitterBot from '@/public/twitter-bot.png'
 import githubBanner from '@/public/git-banner.jpg'
 import pl from '@/public/pl.png'
 import beautifulsoup from '@/public/beautifulsoup.png'
+import cinefindWebApp from '@/public/cinefind-web-app.png'
+import cinefindEngine from '@/public/cinefind-engine.png'
+import mailgun from '@/public/mailgun.png'
 
 export const links = [
   {
@@ -220,7 +222,7 @@ export const skills = [
     image: scikit,
   },
   {
-    name: 'BeaitifulSoup',
+    name: 'BeautifulSoup',
     image: beautifulsoup,
   },
   {
@@ -234,6 +236,73 @@ export const skills = [
 ] as const
 
 export const projects = [
+  {
+    name: 'Cinefind, Web App',
+    image: cinefindWebApp,
+    description:
+      "Developed a full-stack web application for Cinefind which features a real-time dashboard of every free movie screening in a user's city.",
+    tech: [
+      {
+        src: typescript,
+        alt: 'typescript',
+      },
+      {
+        src: next,
+        alt: 'next.js',
+      },
+      {
+        src: react,
+        alt: 'react',
+      },
+      { src: tailwind, alt: 'tailwind' },
+      {
+        src: mongodb,
+        alt: 'mongodb',
+      },
+      {
+        src: prisma,
+        alt: 'prisma',
+      },
+      {
+        src: vercel,
+        alt: 'vercel',
+      },
+    ],
+    tags: [],
+    link: 'https://cinefind.app',
+    code: '#',
+  },
+  {
+    name: 'Cinefind, Server',
+    image: cinefindEngine,
+    description:
+      'Developed a Python-based local server for Cinefind that finds every free movie screening in the U.S., sending real-time email alerts to thousands of users.',
+    tech: [
+      {
+        src: python,
+        alt: 'python',
+      },
+      {
+        src: jinja,
+        alt: 'jinja',
+      },
+      {
+        src: beautifulsoup,
+        alt: 'beautifulsoup',
+      },
+      {
+        src: mailgun,
+        alt: 'mailgun',
+      },
+      {
+        src: tmdb,
+        alt: 'tmdb',
+      },
+    ],
+    tags: [],
+    link: null,
+    code: '#',
+  },
   {
     name: 'X/Twitter Bot Detector',
     image: twitterBot,
@@ -256,12 +325,6 @@ export const projects = [
         src: pandas,
         alt: 'pandas',
       },
-    ],
-    tags: [
-      'Machine Learning',
-      'API Integration',
-      'Model Deployment',
-      'API Design',
     ],
     link: null,
     code: 'https://github.com/aross2010/twitter-bot-detector',
@@ -297,12 +360,6 @@ export const projects = [
         alt: 'reddit',
       },
     ],
-    tags: [
-      'Automation Engineering',
-      'Third-Party API',
-      'Real-Time Notifications',
-      'Email Alerts',
-    ],
     link: null,
     code: 'https://github.com/aross2010/vinyl-bot',
   },
@@ -337,7 +394,6 @@ export const projects = [
         alt: 'spotify',
       },
     ],
-    tags: ['Web Development', 'Third-Paty API', 'OAuth Flow', 'Game Design'],
     link: 'https://spotlefy.vercel.app/',
     code: 'https://github.com/aross2010/spotlefy',
   },
@@ -376,80 +432,8 @@ export const projects = [
         alt: 'vercel',
       },
     ],
-    tags: [
-      'Full-Stack Web Development',
-      'API Design',
-      'Data Visualization',
-      'OAuth Flow',
-    ],
     link: 'https://splitv1.vercel.app/',
     code: 'https://github.com/aross2010/split',
-  },
-  {
-    name: 'CineFind (Personal)',
-    image: cinefindPersonal,
-    description:
-      'Developed a full-stack web app for film discovery with features like user reviews, discussion forums, custom lists, and a CineQ movie guessing game.',
-    tech: [
-      {
-        src: javascript,
-        alt: 'javascript',
-      },
-      {
-        src: react,
-        alt: 'react',
-      },
-      {
-        src: node,
-        alt: 'node',
-      },
-      {
-        src: express,
-        alt: 'express',
-      },
-      {
-        src: vercel,
-        alt: 'vercel',
-      },
-      {
-        src: tmdb,
-        alt: 'tmdb',
-      },
-    ],
-    tags: [
-      'Full-Stack Web Development',
-      'API Design',
-      'Third-Party API',
-      'Game Design',
-    ],
-    link: 'https://cinefind.vercel.app/',
-    code: 'https://github.com/aross2010/cinefind',
-  },
-  {
-    name: 'Premier League Analysis',
-    image: pl,
-    description:
-      'Wrote Python scripts to scrape public football data from FBref, generated structured datasets, designed a MySQL schema, and performed advanced SQL analysis on team and player performance from the 23–24 season.',
-    tech: [
-      {
-        src: python,
-        alt: 'python',
-      },
-      {
-        src: mysql,
-        alt: 'mysql',
-      },
-      {
-        src: pandas,
-        alt: 'pandas',
-      },
-      {
-        src: beautifulsoup,
-        alt: 'beautifulsoup',
-      },
-    ],
-    link: null,
-    code: 'https://github.com/aross2010/premier-league-analysis',
   },
 ]
 
@@ -466,28 +450,27 @@ export const experiences = [
     title: 'Software Engineer',
     subtitle: 'Cinefind',
     link: 'https://cinefind.app',
-    tech: [
-      {
-        src: python,
-        alt: 'python',
-      },
-      {
-        src: typescript,
-        alt: 'typescript',
-      },
-      {
-        src: next,
-        alt: 'next.js',
-      },
-      {
-        src: react,
-        alt: 'react',
-      },
-      {
-        src: mongodb,
-        alt: 'mongodb',
-      },
-    ],
+    //   {
+    //     src: python,
+    //     alt: 'python',
+    //   },
+    //   {
+    //     src: typescript,
+    //     alt: 'typescript',
+    //   },
+    //   {
+    //     src: next,
+    //     alt: 'next.js',
+    //   },
+    //   {
+    //     src: react,
+    //     alt: 'react',
+    //   },
+    //   {
+    //     src: mongodb,
+    //     alt: 'mongodb',
+    //   },
+    // ],
     tags: [
       'Automation Engineering',
       'Full-Stack Web Development',
@@ -497,7 +480,7 @@ export const experiences = [
       'Real-Time Notifications',
       'Subscription Billing',
     ],
-    image: cinefindLogo,
+    image: cinefindLogoC,
     dates: 'Jun. 2024 - present',
     description:
       'Built and launched the full technical stack, using Python for web automation and real-time alerts, and Next.js with MongoDB for the web platform.',
@@ -514,37 +497,11 @@ export const experiences = [
   {
     title: 'B.S. Software Engineering',
     subtitle: 'San Jose State University',
-    tech: [
-      {
-        src: java,
-        alt: 'java',
-      },
-      {
-        src: python,
-        alt: 'python',
-      },
-      {
-        src: sql,
-        alt: 'sql',
-      },
-      {
-        src: mysql,
-        alt: 'mysql',
-      },
-      {
-        src: c,
-        alt: 'c',
-      },
-      {
-        src: flask,
-        alt: 'flask',
-      },
-    ],
     image: sjsu,
     dates: 'Dec. 2025',
     description:
       'Led diverse teams on various software development projects, utilizing SDLC methodologies to deliver high-quality solutions.',
-    gpa: 3.8,
+    gpa: 3.76,
   },
 ]
 

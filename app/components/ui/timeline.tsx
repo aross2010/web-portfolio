@@ -29,7 +29,6 @@ export default function Timeline({ data }: TimelineProps) {
               image,
               gpa,
               link,
-              tags,
               emphasized,
               tech,
             },
@@ -104,7 +103,7 @@ export default function Timeline({ data }: TimelineProps) {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.4, delay: 0.1 }}
                     viewport={{ once: true }}
-                    className={`sm:h-20 sm:w-20 w-16 h-16 shadow-slate-800 absolute lg:left-1/2 transform lg:-translate-x-1/2 flex items-center justify-center p-2 border-2 border-sjsu-gold rounded-full`}
+                    className={`sm:h-20 sm:w-20 w-16 h-16 absolute lg:left-1/2 transform lg:-translate-x-1/2 flex items-center justify-center p-2 border-2 border-sjsu-gold rounded-full`}
                   >
                     <Image
                       src={image}
@@ -122,7 +121,7 @@ export default function Timeline({ data }: TimelineProps) {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.25 }}
                   viewport={{ once: true }}
-                  className={`p-4 relative bg-slate-700 rounded-lg lg:flex hidden flex-col lg:max-w-[340px] sm:max-w-[70%] shadow-md shadow-slate-800 sm:ml-32 ml-20 ${
+                  className={`p-4 relative bg-slate-700 rounded-lg lg:flex hidden flex-col lg:max-w-[340px] sm:max-w-[70%] sm:ml-32 ml-20 ${
                     i % 2 == 0 ? 'lg:ml-12' : 'lg:mr-12 lg:ml-auto'
                   } `}
                 >
@@ -144,7 +143,7 @@ export default function Timeline({ data }: TimelineProps) {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.5 }}
                   viewport={{ once: true }}
-                  className={`p-4 relative bg-slate-700 rounded-lg lg:hidden flex flex-col lg:max-w-[340px] sm:max-w-[70%] shadow-md shadow-slate-800 sm:ml-32 ml-20 ${
+                  className={`p-4 relative bg-slate-700 rounded-lg lg:hidden flex flex-col lg:max-w-[340px] sm:max-w-[70%] sm:ml-32 ml-20 ${
                     i % 2 == 0 ? 'lg:ml-12' : 'lg:mr-12 lg:ml-auto'
                   } `}
                 >

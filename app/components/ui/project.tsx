@@ -58,7 +58,7 @@ export default function Project({ project }: ProjectProps) {
             href={code}
             className="w-full !py-2"
           >
-            Code <FaGithub />
+            {code === '#' ? 'Private' : 'Code'} <FaGithub />
           </Button>
         </div>
       </div>

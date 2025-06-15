@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 type ButtonProps = {
   children: React.ReactNode
-  href?: string
+  href?: string | null
   className?: string
 } & React.ButtonHTMLAttributes<HTMLButtonElement>
 
@@ -25,8 +25,11 @@ export default function Button({
     button
   ) : (
     <Link
-      href={href}
+      href={href === '#' ? '#' : href}
       target="_blank"
+      className={`${
+        href === '#' ? 'cursor-not-allowed disabled pointer-events-none' : ''
+      }`}
     >
       {button}
     </Link>
