@@ -17,6 +17,9 @@ const config: Config = {
         'sjsu-gold': '#E5A823',
         'sjsu-blue': '#0055A2',
       },
+      fontFamily: {
+        outfit: ['var(--font-outfit)', 'sans-serif'],
+      },
       screens: {
         xl: '1250px',
         lg: '950px',

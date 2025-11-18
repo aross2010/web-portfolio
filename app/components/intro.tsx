@@ -9,16 +9,17 @@ import Link from 'next/link'
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.75)
 
-  const renderedSocials = socials.map(({ name, icon: Icon, href }) => {
+  const renderedSocials = socials.map(({ name, icon: Icon, href, color }) => {
     return (
       <Link
         key={name}
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="text-white/50 hover:text-sjsu-gold transition-all"
+        className="text-white/50 transition-all social-link"
+        style={{ '--hover-color': color } as React.CSSProperties}
       >
-        <Icon className="md:text-3xl text-2xl" />
+        <Icon className="md:text-4xl text-2xl" />
       </Link>
     )
   })
@@ -52,17 +53,26 @@ export default function Intro() {
         viewport={{ once: true }}
         className="text-gray-400 text-lg mb-8 lg:w-[55%] md:w-[65%]"
       >
-        I&apos;m a software engineering student at San Jose State University and
-        one of the engineers behind{' '}
+        I&apos;m a recent Software Engineering graduate from San Jose State
+        University. I recently led development on{' '}
         <Link
           href={'https://cinefind.app'}
           target="_blank"
-          className="font-semibold hover:text-sjsu-gold transition-all"
+          className="font-bold hover:text-[#FF5700] transition-all"
         >
           Cinefind
         </Link>
-        , a web platform designed to connect audiences across the country with
-        free, in-theater movie screenings.
+        , a platform that connected audiences with free in-theater screenings
+        across the country, and I&apos;m now focused on growing my own app{' '}
+        <Link
+          href={'https://apps.apple.com/app/id6754656428'}
+          target="_blank"
+          className="font-bold hover:text-[#807bcf] transition-all"
+        >
+          Spotter
+        </Link>{' '}
+        — designing, maintaining, and shipping the next wave of updates for the
+        app.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, x: -25 }}

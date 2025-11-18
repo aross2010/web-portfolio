@@ -1,15 +1,17 @@
-import { footerLinks } from '../lib/data'
+import { socials } from '../lib/data'
 import Link from 'next/link'
 
 export default function Footer() {
-  const renderedLinks = footerLinks.map(({ name, href, icon: Icon }) => {
+  const renderedLinks = socials.map(({ name, href, icon: Icon, color }) => {
     return (
       <Link
         key={name}
         href={href}
         target="_blank"
+        className="social-link transition-all"
+        style={{ '--hover-color': color } as React.CSSProperties}
       >
-        <Icon className="text-3xl hover:text-sjsu-gold transition-colors" />
+        <Icon className="text-3xl" />
       </Link>
     )
   })

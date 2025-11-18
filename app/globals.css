@@ -30,3 +30,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.social-link:hover {
+  color: var(--hover-color);
+}

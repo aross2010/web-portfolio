@@ -12,6 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 const outfit = Outfit({
   subsets: ['latin'],
   variable: '--font-outfit',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -27,10 +28,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-slate-900 scroll-smooth"
+      className={`bg-slate-900 scroll-smooth ${outfit.variable}`}
     >
       <body
-        className={` ${outfit.className} min-h-screen text-gray-50 flex flex-col items-center justify-center overflow-x-hidden w-full`}
+        className={`${outfit.className} font-outfit min-h-screen text-gray-50 flex flex-col items-center justify-center overflow-x-hidden w-full`}
       >
         <ActiveSectionContextProvider>
           <Navbar />

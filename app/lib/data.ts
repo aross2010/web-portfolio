@@ -62,6 +62,10 @@ import beautifulsoup from '@/public/beautifulsoup.png'
 import cinefindWebApp from '@/public/cinefind-web-app.png'
 import cinefindEngine from '@/public/cinefind-engine.png'
 import mailgun from '@/public/mailgun.png'
+import expo from '@/public/expo.png'
+import postgres from '@/public/postgres.png'
+import selenium from '@/public/selenium.png'
+import spotter from '@/public/spotter.png'
 
 export const links = [
   {
@@ -95,16 +99,19 @@ export const socials = [
     name: 'LinkedIn',
     icon: FaLinkedin,
     href: 'https://www.linkedin.com/in/alex-ross-32b278236/',
+    color: '#0072B1',
   },
   {
     name: 'GitHub',
     icon: FaGithub,
     href: 'https://www.github.com/aross2010',
+    color: '#C0C0C0',
   },
   {
     name: 'Email',
     icon: FaEnvelope,
-    href: 'mailto:@alex.ross@sjsu.edu',
+    href: 'mailto:adross1027@gmail.com',
+    color: '#E5A823',
   },
 ] as const
 
@@ -194,6 +201,10 @@ export const skills = [
     image: next,
   },
   {
+    name: 'Expo',
+    image: expo,
+  },
+  {
     name: 'Node.js',
     image: node,
   },
@@ -202,12 +213,12 @@ export const skills = [
     image: flask,
   },
   {
-    name: 'Prisma',
-    image: prisma,
-  },
-  {
     name: 'MongoDB',
     image: mongodb,
+  },
+  {
+    name: 'PostgreSQL',
+    image: postgres,
   },
   {
     name: 'MySQL',
@@ -226,16 +237,42 @@ export const skills = [
     image: beautifulsoup,
   },
   {
-    name: 'Vercel',
-    image: vercel,
-  },
-  {
-    name: 'Git',
-    image: git,
+    name: 'Selenium',
+    image: selenium,
   },
 ] as const
 
 export const projects = [
+  {
+    name: 'Spotter',
+    image: spotter,
+    description:
+      'Designed, developed, shipped, and maintained Spotter, a fully customizable workout tracking app built for weightlifters.',
+    tech: [
+      {
+        src: typescript,
+        alt: 'typescript',
+      },
+      {
+        src: react,
+        alt: 'react',
+      },
+      {
+        src: expo,
+        alt: 'expo',
+      },
+      {
+        src: postgres,
+        alt: 'postgreSQL',
+      },
+      {
+        src: tailwind,
+        alt: 'tailwind',
+      },
+    ],
+    link: 'https://apps.apple.com/app/id6754656428',
+    code: '#',
+  },
   {
     name: 'Cinefind, Web App',
     image: cinefindWebApp,
@@ -289,6 +326,10 @@ export const projects = [
       {
         src: beautifulsoup,
         alt: 'beautifulsoup',
+      },
+      {
+        src: selenium,
+        alt: 'selenium',
       },
       {
         src: mailgun,
@@ -397,55 +438,17 @@ export const projects = [
     link: 'https://spotlefy.vercel.app/',
     code: 'https://github.com/aross2010/spotlefy',
   },
-  {
-    name: 'Split',
-    image: split,
-    description:
-      'Developed a full-stack web app for logging workouts and tracking fitness progress through interactive charts and data visualizations.',
-    tech: [
-      {
-        src: typescript,
-        alt: 'typescript',
-      },
-      {
-        src: react,
-        alt: 'react',
-      },
-      {
-        src: next,
-        alt: 'next',
-      },
-      {
-        src: tailwind,
-        alt: 'tailwind',
-      },
-      {
-        src: mongodb,
-        alt: 'mongodb',
-      },
-      {
-        src: prisma,
-        alt: 'prisma',
-      },
-      {
-        src: vercel,
-        alt: 'vercel',
-      },
-    ],
-    link: 'https://splitv1.vercel.app/',
-    code: 'https://github.com/aross2010/split',
-  },
 ]
 
 export const experiences = [
-  {
-    title: 'Operations Manager',
-    subtitle: 'AMC Theatres',
-    image: amc,
-    dates: 'Mar. 2022 - Aug. 2022',
-    description:
-      'Managed HR functions such as recruiting, payroll, training, and optimizing team schedules to save $10K+ quarterly.',
-  },
+  // {
+  //   title: 'Operations Manager',
+  //   subtitle: 'AMC Theatres',
+  //   image: amc,
+  //   dates: 'Mar. 2022 - Aug. 2022',
+  //   description:
+  //     'Managed HR functions such as recruiting, payroll, training, and optimizing team schedules to save $10K+ quarterly.',
+  // },
   {
     title: 'Software Engineer',
     subtitle: 'Cinefind',
@@ -481,19 +484,19 @@ export const experiences = [
       'Subscription Billing',
     ],
     image: cinefindLogoC,
-    dates: 'Jun. 2024 - present',
+    dates: 'Jun. 2024 - Aug. 2025',
     description:
       'Built and launched the full technical stack, using Python for web automation and real-time alerts, and Next.js with MongoDB for the web platform.',
     emphasized: true,
   },
-  {
-    title: 'Lead Basketball Instructor',
-    subtitle: 'Lifetime Activities',
-    image: lifetime,
-    dates: 'Jul. 2024 - present',
-    description:
-      'Orchestrated basketball skills programs for children and teens, achieving 25% enrollment growth per eight weeks.',
-  },
+  // {
+  //   title: 'Lead Basketball Instructor',
+  //   subtitle: 'Lifetime Activities',
+  //   image: lifetime,
+  //   dates: 'Jul. 2024 - present',
+  //   description:
+  //     'Orchestrated basketball skills programs for children and teens, achieving 25% enrollment growth per eight weeks.',
+  // },
   {
     title: 'B.S. Software Engineering',
     subtitle: 'San Jose State University',
@@ -502,6 +505,16 @@ export const experiences = [
     description:
       'Led diverse teams on various software development projects, utilizing SDLC methodologies to deliver high-quality solutions.',
     gpa: 3.76,
+  },
+  {
+    title: 'Software Engineer — Mobile',
+    subtitle: 'Spotter',
+    link: 'https://apps.apple.com/app/id6754656428',
+    tags: [],
+    image: spotter,
+    dates: 'Jul. 2025 - present',
+    description:
+      'Designed, developed, shipped, and maintained Spotter, a workout tracking app built for weightlifters.',
   },
 ]
 
