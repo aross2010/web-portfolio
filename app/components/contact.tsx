@@ -11,19 +11,19 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 export default function Contact() {
-  const { ref } = useSectionInView('Contact', 0.5)
+  const { ref } = useSectionInView('Connect', 0.5)
 
   return (
     <section
       ref={ref}
-      id="contact"
+      id="connect"
       className="scroll-mt-24"
     >
       <Header
         animateOpacity
         className="text-center"
       >
-        Contact Me!
+        🤝 Connect With Me!
       </Header>
       <motion.div
         initial={{ opacity: 0 }}
@@ -32,16 +32,23 @@ export default function Contact() {
         transition={{ duration: 0.4, delay: 0.5 }}
       >
         <p className="text-center lg:px-48 md:px-32 sm:px-12 text-lg text-gray-400">
-          Thank you for checking out my website! If you have any questions or
-          would like to get in touch, feel free to reach out to via the form
-          below, or by{' '}
+          Thank you for checking out my website! If you want to get in touch,
+          connect with me on{' '}
+          <Link
+            target="_blank"
+            href={'https://www.linkedin.com/in/alex-ross-32b278236/'}
+            className="hover:text-[#0072B1] transition-all font-semibold"
+          >
+            LinkedIn
+          </Link>
+          ,{' '}
           <Link
             href="mailto:alex.ross@sjsu.edu"
             className="hover:text-sjsu-gold transition-all font-semibold"
           >
-            email
-          </Link>
-          .
+            email me
+          </Link>{' '}
+          or reach out via the form below.
         </p>
         <form
           id="contact-form"

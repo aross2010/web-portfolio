@@ -14,7 +14,7 @@ export default function Experience() {
       id="experience"
       className="scroll-mt-24"
     >
-      <Header>Experience</Header>
+      <Header>💼 Experience</Header>
       <Timeline data={experiences} />
     </section>
   )

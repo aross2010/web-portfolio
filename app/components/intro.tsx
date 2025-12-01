@@ -37,7 +37,7 @@ export default function Intro() {
         viewport={{ once: true }}
       >
         <h1 className="md:text-2xl text-xl sm:mb-6 mb-3 font-light tracking-wider text-gray-400">
-          Welcome! I&apos;m
+          👋 Welcome! I&apos;m
         </h1>
         <h1 className="md:text-7xl text-5xl font-bold sm:mb-2 mb-1 flex items-end">
           Alex Ross{' '}

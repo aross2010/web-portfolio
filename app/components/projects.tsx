@@ -43,7 +43,7 @@ export default function Projects() {
       className="scroll-mt-24"
       ref={ref}
     >
-      <Header>Projects</Header>
+      <Header>🚀 Projects</Header>
       <ul className="grid md:grid-cols-2 grid-cols-1 gap-4 md:auto-rows-fr">
         {renderedProjects}
         {projects.length % 2 !== 0 && (

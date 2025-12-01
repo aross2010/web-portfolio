@@ -66,6 +66,7 @@ import expo from '@/public/expo.png'
 import postgres from '@/public/postgres.png'
 import selenium from '@/public/selenium.png'
 import spotter from '@/public/spotter.png'
+import swift from '@/public/swift.png'
 
 export const links = [
   {
@@ -89,8 +90,8 @@ export const links = [
     label: 'Experience',
   },
   {
-    hash: '#contact',
-    label: 'Contact',
+    hash: '#connect',
+    label: 'Connect',
   },
 ] as const
 
@@ -189,8 +190,8 @@ export const skills = [
     image: css,
   },
   {
-    name: 'Tailwind CSS',
-    image: tailwind,
+    name: 'Swift',
+    image: swift,
   },
   {
     name: 'React',
@@ -271,6 +272,7 @@ export const projects = [
       },
     ],
     link: 'https://apps.apple.com/app/id6754656428',
+    isApp: true,
     code: '#',
   },
   {
@@ -341,7 +343,7 @@ export const projects = [
       },
     ],
     tags: [],
-    link: null,
+    link: 'https://cinefind.app',
     code: '#',
   },
   {

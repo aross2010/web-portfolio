@@ -2,7 +2,7 @@ import { ProjectType } from '@/app/lib/types'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaExternalLinkAlt } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa6'
+import { FaAppStore, FaGithub } from 'react-icons/fa6'
 import Button from './button'
 
 type ProjectProps = {
@@ -10,7 +10,7 @@ type ProjectProps = {
 }
 
 export default function Project({ project }: ProjectProps) {
-  const { name, image, description, tech, link, code } = project
+  const { name, image, description, tech, link, code, isApp } = project
   return (
     <div className="rounded-lg bg-slate-700 flex flex-col min-h-full flex-grow">
       <div className="relative lg:h-72 h-56 rounded-t-lg flex items-center overflow-hidden bg-slate-950">
@@ -42,24 +42,34 @@ export default function Project({ project }: ProjectProps) {
         <p className="text-gray-400 font-medium mb-2">{description}</p>
         <div
           className={`grid ${
-            link ? 'grid-cols-2' : 'grid-cols-1'
+            link && code !== '#' ? 'grid-cols-2' : 'grid-cols-1'
           } gap-2 mt-auto`}
         >
           {link && (
             <Button
               href={link}
-              className="w-full !py-2"
+              className="w-full font-medium !py-2"
             >
-              Website <FaExternalLinkAlt />
+              {isApp ? (
+                <>
+                  App Store <FaAppStore />
+                </>
+              ) : (
+                <>
+                  Website <FaExternalLinkAlt />
+                </>
+              )}
             </Button>
           )}
 
-          <Button
-            href={code}
-            className="w-full !py-2"
-          >
-            {code === '#' ? 'Private' : 'Code'} <FaGithub />
-          </Button>
+          {code !== '#' && (
+            <Button
+              href={code}
+              className="w-full !py-2 font-medium"
+            >
+              Code <FaGithub />
+            </Button>
+          )}
         </div>
       </div>
     </div>

@@ -11,6 +11,7 @@ export type ProjectType = {
   }[]
   link: string | null
   code: string | null
+  isApp?: boolean
 }
 
 export type TimelineElement = {
