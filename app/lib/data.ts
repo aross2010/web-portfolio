@@ -67,6 +67,7 @@ import postgres from '@/public/postgres.png'
 import selenium from '@/public/selenium.png'
 import spotter from '@/public/spotter.png'
 import swift from '@/public/swift.png'
+import aws from '@/public/aws.png'
 
 export const links = [
   {
@@ -174,10 +175,6 @@ export const skills = [
     image: java,
   },
   {
-    name: 'C',
-    image: c,
-  },
-  {
     name: 'SQL',
     image: sql,
   },
@@ -241,6 +238,10 @@ export const skills = [
     name: 'Selenium',
     image: selenium,
   },
+  {
+    name: 'AWS',
+    image: aws,
+  },
 ] as const
 
 export const projects = [
@@ -248,7 +249,7 @@ export const projects = [
     name: 'Spotter',
     image: spotter,
     description:
-      'Designed, developed, shipped, and maintained Spotter, a fully customizable workout tracking app built for weightlifters.',
+      'Designed, developed, shipped, and maintained Spotter, a fully customizable workout tracking app on iOS built for weightlifters.',
     tech: [
       {
         src: typescript,
