@@ -54,7 +54,7 @@ export default function Intro() {
         className="text-gray-400 text-lg mb-8 lg:w-[55%] md:w-[65%]"
       >
         I&apos;m a recent Software Engineering graduate from San Jose State
-        University. I recently led development on{' '}
+        University. I&apos;ve recently worked for a seed-stage startup{' '}
         <Link
           href={'https://cinefind.app'}
           target="_blank"
@@ -62,8 +62,9 @@ export default function Intro() {
         >
           Cinefind
         </Link>
-        , a platform that connected audiences with free in-theater screenings
-        across the country, and I&apos;m now focused on growing my own app{' '}
+        , where I built and shipped full-stack features across the platform.
+        Now, I&apos;m ready to step into a full-time engineering role while
+        continuing to build and grow my own app,{' '}
         <Link
           href={'https://apps.apple.com/app/id6754656428'}
           target="_blank"

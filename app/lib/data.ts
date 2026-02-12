@@ -5,6 +5,8 @@ import {
   FaPlaneDeparture,
   FaEnvelope,
   FaBookOpen,
+  FaLetterboxd,
+  FaSquareLetterboxd,
 } from 'react-icons/fa6'
 import { PiTennisBallFill } from 'react-icons/pi'
 import html from '@/public/html.png'
@@ -60,7 +62,7 @@ import githubBanner from '@/public/git-banner.jpg'
 import pl from '@/public/pl.png'
 import beautifulsoup from '@/public/beautifulsoup.png'
 import cinefindWebApp from '@/public/cinefind-web-app.png'
-import cinefindEngine from '@/public/cinefind-engine.png'
+import cinefindEngine from '@/public/cinefind-banner.png'
 import mailgun from '@/public/mailgun.png'
 import expo from '@/public/expo.png'
 import postgres from '@/public/postgres.png'
@@ -68,16 +70,13 @@ import selenium from '@/public/selenium.png'
 import spotter from '@/public/spotter.png'
 import swift from '@/public/swift.png'
 import aws from '@/public/aws.png'
+import stripe from '@/public/stripe.png'
 
 export const links = [
   {
     hash: '#home',
     label: 'Home',
   },
-  // {
-  //   hash: '#about',
-  //   label: 'About',
-  // },
   {
     hash: '#skills',
     label: 'Skills',
@@ -115,49 +114,11 @@ export const socials = [
     href: 'mailto:adross1027@gmail.com',
     color: '#E5A823',
   },
-] as const
-
-export const interests = [
   {
-    name: 'Basketball',
-    image: warriors,
-  },
-  {
-    name: 'Soccer',
-    image: villa,
-  },
-  {
-    name: 'Baseball',
-    image: giants,
-  },
-  {
-    name: 'Football',
-    image: niners,
-  },
-  {
-    name: 'Tennis',
-    icon: PiTennisBallFill,
-  },
-  {
-    name: 'Fitness',
-    icon: FaDumbbell,
-  },
-  {
-    name: 'Movies',
-    image: boxd,
+    name: 'Letterboxd',
+    icon: FaSquareLetterboxd,
     href: 'https://letterboxd.com/aross2010/',
-  },
-  {
-    name: 'Music',
-    image: atcq,
-  },
-  {
-    name: 'Reading',
-    icon: FaBookOpen,
-  },
-  {
-    name: 'Traveling',
-    icon: FaPlaneDeparture,
+    color: '#ff8000',
   },
 ] as const
 
@@ -187,16 +148,20 @@ export const skills = [
     image: css,
   },
   {
-    name: 'Swift',
-    image: swift,
-  },
-  {
-    name: 'React',
+    name: 'React.js',
     image: react,
   },
   {
     name: 'Next.js',
     image: next,
+  },
+  {
+    name: 'Swift',
+    image: swift,
+  },
+  {
+    name: 'Native',
+    image: react,
   },
   {
     name: 'Expo',
@@ -207,8 +172,8 @@ export const skills = [
     image: node,
   },
   {
-    name: 'Flask',
-    image: flask,
+    name: 'Express',
+    image: express,
   },
   {
     name: 'MongoDB',
@@ -222,18 +187,7 @@ export const skills = [
     name: 'MySQL',
     image: mysql,
   },
-  {
-    name: 'Pandas',
-    image: pandas,
-  },
-  {
-    name: 'Scikit-learn',
-    image: scikit,
-  },
-  {
-    name: 'BeautifulSoup',
-    image: beautifulsoup,
-  },
+
   {
     name: 'Selenium',
     image: selenium,
@@ -274,7 +228,7 @@ export const projects = [
     ],
     link: 'https://apps.apple.com/app/id6754656428',
     isApp: true,
-    code: '#',
+    code: null,
   },
   {
     name: 'Cinefind, Web App',
@@ -300,35 +254,22 @@ export const projects = [
         alt: 'mongodb',
       },
       {
-        src: prisma,
-        alt: 'prisma',
-      },
-      {
-        src: vercel,
-        alt: 'vercel',
+        src: stripe,
+        alt: 'stripe',
       },
     ],
-    tags: [],
     link: 'https://cinefind.app',
-    code: '#',
+    code: null,
   },
   {
     name: 'Cinefind, Server',
     image: cinefindEngine,
     description:
-      'Developed a Python-based local server for Cinefind that finds every free movie screening in the U.S., sending real-time email alerts to thousands of users.',
+      'Developed local server for Cinefind that finds every free movie screening in the U.S. and sends real-time email alerts to thousands of users.',
     tech: [
       {
         src: python,
         alt: 'python',
-      },
-      {
-        src: jinja,
-        alt: 'jinja',
-      },
-      {
-        src: beautifulsoup,
-        alt: 'beautifulsoup',
       },
       {
         src: selenium,
@@ -338,14 +279,9 @@ export const projects = [
         src: mailgun,
         alt: 'mailgun',
       },
-      {
-        src: tmdb,
-        alt: 'tmdb',
-      },
     ],
-    tags: [],
     link: 'https://cinefind.app',
-    code: '#',
+    code: null,
   },
   {
     name: 'X/Twitter Bot Detector',
@@ -377,19 +313,15 @@ export const projects = [
     name: 'Vinyl Bot',
     image: vinylBot,
     description:
-      'Built automated Python scripts to send real-time email alerts for vinyl releases, integrating with the Discogs API to monitor and track wantlist records.',
+      'Built automated Python scripts on AWS EC2 to send real-time email alerts for vinyl releases by integrating with the Discogs API to monitor wantlist records.',
     tech: [
       {
         src: python,
         alt: 'python',
       },
       {
-        src: jinja,
-        alt: 'jinja',
-      },
-      {
-        src: rpi,
-        alt: 'rpi',
+        src: aws,
+        alt: 'aws',
       },
       {
         src: cron,
@@ -438,103 +370,38 @@ export const projects = [
         alt: 'spotify',
       },
     ],
-    link: 'https://spotlefy.vercel.app/',
+    link: null,
     code: 'https://github.com/aross2010/spotlefy',
   },
 ]
 
 export const experiences = [
-  // {
-  //   title: 'Operations Manager',
-  //   subtitle: 'AMC Theatres',
-  //   image: amc,
-  //   dates: 'Mar. 2022 - Aug. 2022',
-  //   description:
-  //     'Managed HR functions such as recruiting, payroll, training, and optimizing team schedules to save $10K+ quarterly.',
-  // },
   {
     title: 'Software Engineer',
     subtitle: 'Cinefind',
     link: 'https://cinefind.app',
-    //   {
-    //     src: python,
-    //     alt: 'python',
-    //   },
-    //   {
-    //     src: typescript,
-    //     alt: 'typescript',
-    //   },
-    //   {
-    //     src: next,
-    //     alt: 'next.js',
-    //   },
-    //   {
-    //     src: react,
-    //     alt: 'react',
-    //   },
-    //   {
-    //     src: mongodb,
-    //     alt: 'mongodb',
-    //   },
-    // ],
-    tags: [
-      'Automation Engineering',
-      'Full-Stack Web Development',
-      'API Design',
-      'Third-Party Data',
-      'UX Design',
-      'Real-Time Notifications',
-      'Subscription Billing',
-    ],
     image: cinefindLogoC,
     dates: 'Jun. 2024 - Aug. 2025',
     description:
-      'Built and launched the full technical stack, using Python for web automation and real-time alerts, and Next.js with MongoDB for the web platform.',
-    emphasized: true,
+      'Built and scaled Cinefind into a production web platform used by thousands of users, working full-stack on authentication, web scraping, subscriptions and payments (Stripe), automated email alerts, booking flows, automated screening RSVPs, system design, and production releases.',
   },
-  // {
-  //   title: 'Lead Basketball Instructor',
-  //   subtitle: 'Lifetime Activities',
-  //   image: lifetime,
-  //   dates: 'Jul. 2024 - present',
-  //   description:
-  //     'Orchestrated basketball skills programs for children and teens, achieving 25% enrollment growth per eight weeks.',
-  // },
   {
     title: 'B.S. Software Engineering',
     subtitle: 'San Jose State University',
     image: sjsu,
     dates: 'Dec. 2025',
     description:
-      'Led diverse teams on various software development projects, utilizing SDLC methodologies to deliver high-quality solutions.',
-    gpa: 3.76,
+      'Led various software developement projects in machine learning, AI, mobile development, web development, QA, information security, databases, and more.',
+    gpa: 3.6,
+    education: true,
   },
   {
     title: 'Software Engineer — Mobile',
     subtitle: 'Spotter',
     link: 'https://apps.apple.com/app/id6754656428',
-    tags: [],
     image: spotter,
     dates: 'Jul. 2025 - present',
     description:
       'Designed, developed, shipped, and maintained Spotter, a workout tracking app built for weightlifters.',
   },
 ]
-
-export const footerLinks = [
-  {
-    name: 'LinkedIn',
-    icon: FaLinkedin,
-    href: 'https://www.linkedin.com/in/alex-ross-32b278236/',
-  },
-  {
-    name: 'GitHub',
-    icon: FaGithub,
-    href: 'https://www.github.com/aross2010',
-  },
-  {
-    name: 'Email',
-    icon: FaEnvelope,
-    href: 'mailto:@alex.ross@sjsu.edu',
-  },
-] as const

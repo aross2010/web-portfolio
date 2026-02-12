@@ -27,8 +27,8 @@ export default function Skills() {
       id="skills"
       className="scroll-mt-24"
     >
-      <Header>👨‍💻 Skills</Header>
-      <ul className="grid lg:grid-cols-10 md:grid-cols-5 grid-cols-4 gap-2">
+      <Header>👨‍💻 Top Skills</Header>
+      <ul className="grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-2">
         {renderedSkills}
       </ul>
     </section>

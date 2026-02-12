@@ -28,7 +28,7 @@ export default function IconCard({
         Icon && <Icon className="h-10 w-auto text-sjsu-gold" />
       )}
 
-      <p className="text-white/50 line-clamp-1  font-medium text-center text-sm">
+      <p className="text-white/50 truncate px-1 font-medium text-center text-sm w-full overflow-hidden">
         {name}
       </p>
     </Fragment>

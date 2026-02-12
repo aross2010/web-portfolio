@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { Fragment } from 'react'
 import { BsFillCaretLeftFill } from 'react-icons/bs'
 import Link from 'next/link'
+import { FaGraduationCap } from 'react-icons/fa6'
 
 type TimelineProps = {
   data: TimelineElement[]
@@ -29,20 +30,22 @@ export default function Timeline({ data }: TimelineProps) {
               image,
               gpa,
               link,
-              emphasized,
-              tech,
+              education,
             },
-            i
+            i,
           ) => {
             const sub = (
               <h3 className={`text-gray-400 mb-2 ${link ? 'underline' : ''}`}>
                 {subtitle}
-                {gpa && `, ${gpa} GPA`}
+                {gpa && ` • ${gpa} GPA`}
               </h3>
             )
             const componentContent = (
               <Fragment>
-                <h3 className="text-gray-400 mb-4">{dates}</h3>
+                <h3 className="text-gray-400 mb-4 flex-row flex items-center gap-2">
+                  {education && <FaGraduationCap />}
+                  {dates}
+                </h3>
                 <h2 className="font-semibold text-lg">{title}</h2>
                 {link ? (
                   <Link
@@ -54,24 +57,7 @@ export default function Timeline({ data }: TimelineProps) {
                 ) : (
                   sub
                 )}
-
                 <p className="text-gray-400">{description}</p>
-
-                {tech && (
-                  <ul className="flex flex-wrap items-center gap-1 mt-4">
-                    {tech.map(({ src, alt }, i) => {
-                      return (
-                        <li key={i}>
-                          <Image
-                            src={src}
-                            alt={alt}
-                            className="h-6 w-auto"
-                          />
-                        </li>
-                      )
-                    })}
-                  </ul>
-                )}
               </Fragment>
             )
 
@@ -154,7 +140,7 @@ export default function Timeline({ data }: TimelineProps) {
                 </motion.div>
               </li>
             )
-          }
+          },
         )}
       </ul>
     </ArcherContainer>

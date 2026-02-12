@@ -18,7 +18,7 @@ export default function Project({ project }: ProjectProps) {
           src={image}
           alt={name}
           fill
-          className="object-center object-contain"
+          className="object-center object-cover"
         />
       </div>
 
@@ -42,7 +42,7 @@ export default function Project({ project }: ProjectProps) {
         <p className="text-gray-400 font-medium mb-2">{description}</p>
         <div
           className={`grid ${
-            link && code !== '#' ? 'grid-cols-2' : 'grid-cols-1'
+            link && code !== null ? 'grid-cols-2' : 'grid-cols-1'
           } gap-2 mt-auto`}
         >
           {link && (
@@ -62,7 +62,7 @@ export default function Project({ project }: ProjectProps) {
             </Button>
           )}
 
-          {code !== '#' && (
+          {code !== null && (
             <Button
               href={code}
               className="w-full !py-2 font-medium"

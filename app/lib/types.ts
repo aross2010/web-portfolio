@@ -18,15 +18,11 @@ export type TimelineElement = {
   dates: string
   title: string
   subtitle: string
-  tech?: {
-    src: StaticImageData
-    alt: string
-  }[]
   description: string
   image: StaticImageData
   gpa?: number
   link?: string
-  emphasized?: boolean
+  education?: boolean
 }
 
 export type Section = (typeof links)[number]['label']
