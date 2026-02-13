@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-slate-900 scroll-smooth ${outfit.variable}`}
+      className={`bg-slate-900 scroll-smooth overflow-x-hidden ${outfit.variable}`}
     >
       <body
         className={`${outfit.className} font-outfit min-h-screen text-gray-50 flex flex-col items-center justify-center overflow-x-hidden w-full`}

@@ -71,6 +71,7 @@ import spotter from '@/public/spotter.png'
 import swift from '@/public/swift.png'
 import aws from '@/public/aws.png'
 import stripe from '@/public/stripe.png'
+import dumbbell from '@/public/dumbbell.png'
 
 export const links = [
   {
@@ -156,12 +157,12 @@ export const skills = [
     image: next,
   },
   {
-    name: 'Swift',
-    image: swift,
+    name: 'React Native',
+    image: react,
   },
   {
-    name: 'Native',
-    image: react,
+    name: 'Swift',
+    image: swift,
   },
   {
     name: 'Expo',
@@ -399,7 +400,7 @@ export const experiences = [
     title: 'Software Engineer — Mobile',
     subtitle: 'Spotter',
     link: 'https://apps.apple.com/app/id6754656428',
-    image: spotter,
+    image: dumbbell,
     dates: 'Jul. 2025 - present',
     description:
       'Designed, developed, shipped, and maintained Spotter, a workout tracking app built for weightlifters.',
