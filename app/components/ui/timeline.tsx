@@ -6,7 +6,13 @@ import { motion } from 'framer-motion'
 import { Fragment } from 'react'
 import { BsFillCaretLeftFill } from 'react-icons/bs'
 import Link from 'next/link'
-import { FaGraduationCap } from 'react-icons/fa6'
+import {
+  FaBriefcase,
+  FaBuilding,
+  FaCertificate,
+  FaGraduationCap,
+  FaLaptopCode,
+} from 'react-icons/fa6'
 
 type TimelineProps = {
   data: TimelineElement[]
@@ -16,22 +22,13 @@ export default function Timeline({ data }: TimelineProps) {
   return (
     <ArcherContainer
       endMarker={false}
-      strokeColor="#E5A823"
+      strokeColor="#E09303"
       strokeWidth={2}
     >
       <ul className="flex flex-col items-center lg:gap-0 gap-12">
         {data.map(
           (
-            {
-              title,
-              subtitle,
-              description,
-              dates,
-              image,
-              gpa,
-              link,
-              education,
-            },
+            { title, subtitle, description, dates, image, gpa, link, type },
             i,
           ) => {
             const sub = (
@@ -43,7 +40,13 @@ export default function Timeline({ data }: TimelineProps) {
             const componentContent = (
               <Fragment>
                 <h3 className="text-gray-400 mb-4 flex-row flex items-center gap-2">
-                  {education && <FaGraduationCap />}
+                  {type === 'education' ? (
+                    <FaGraduationCap />
+                  ) : type === 'work' ? (
+                    <FaBuilding />
+                  ) : (
+                    <FaCertificate />
+                  )}
                   {dates}
                 </h3>
                 <h2 className="font-semibold text-lg">{title}</h2>
@@ -89,7 +92,7 @@ export default function Timeline({ data }: TimelineProps) {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.4, delay: 0.1 }}
                     viewport={{ once: true }}
-                    className={`sm:h-20 sm:w-20 w-16 h-16 absolute lg:left-1/2 transform lg:-translate-x-1/2 flex items-center justify-center p-2 border-2 border-sjsu-gold rounded-full`}
+                    className={`sm:h-20 sm:w-20 w-16 h-16 absolute lg:left-1/2 transform lg:-translate-x-1/2 flex items-center justify-center p-2 border-2 border-primary rounded-full`}
                   >
                     <Image
                       src={image}

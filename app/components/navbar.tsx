@@ -45,7 +45,7 @@ export default function Navbar() {
           {label}
           {label === activeSection && (
             <motion.span
-              className="bg-sjsu-gold rounded-full absolute inset-0 -z-10"
+              className="bg-primary rounded-full absolute inset-0 -z-10"
               layoutId="activeSection"
               transition={{
                 type: 'spring',

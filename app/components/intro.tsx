@@ -19,7 +19,7 @@ export default function Intro() {
         className="text-white/50 transition-all social-link"
         style={{ '--hover-color': color } as React.CSSProperties}
       >
-        <Icon className="md:text-4xl text-2xl" />
+        <Icon className="md:text-3xl text-2xl" />
       </Link>
     )
   })
@@ -53,8 +53,8 @@ export default function Intro() {
         viewport={{ once: true }}
         className="text-gray-400 text-lg mb-8 lg:w-[55%] md:w-[65%]"
       >
-        I&apos;m a recent Software Engineering graduate from San Jose State
-        University. I&apos;ve recently worked for a seed-stage startup{' '}
+        Recent Software Engineering grad from San Jose State. I build full-stack
+        apps powered by AI and ML — most recently shipping features at{' '}
         <Link
           href={'https://cinefind.app'}
           target="_blank"
@@ -62,18 +62,7 @@ export default function Intro() {
         >
           Cinefind
         </Link>
-        , where I built and shipped full-stack features across the platform.
-        Now, I&apos;m ready to step into a full-time engineering role while
-        continuing to build and grow my own app,{' '}
-        <Link
-          href={'https://apps.apple.com/app/id6754656428'}
-          target="_blank"
-          className="font-bold hover:text-[#807bcf] transition-all"
-        >
-          Spotter
-        </Link>{' '}
-        — designing, maintaining, and shipping the next wave of updates for the
-        app.
+        , connecting audiences to local, free, and advanced movie screenings.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, x: -25 }}

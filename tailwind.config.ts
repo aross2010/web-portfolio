@@ -14,8 +14,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'sjsu-gold': '#E5A823',
-        'sjsu-blue': '#0055A2',
+        primary: '#E09303',
       },
       fontFamily: {
         outfit: ['var(--font-outfit)', 'sans-serif'],

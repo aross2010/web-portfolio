@@ -44,7 +44,7 @@ export default function Contact() {
           ,{' '}
           <Link
             href="mailto:alex.ross@sjsu.edu"
-            className="hover:text-sjsu-gold transition-all font-semibold"
+            className="hover:text-primary transition-all font-semibold"
           >
             email me
           </Link>{' '}
@@ -59,7 +59,7 @@ export default function Contact() {
               toast.error(error)
             }
             const form = document.getElementById(
-              'contact-form'
+              'contact-form',
             ) as HTMLFormElement
             form.reset()
             toast.success('Message sent. Thanks for reaching out!')

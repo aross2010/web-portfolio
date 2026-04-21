@@ -13,7 +13,7 @@ export default function Project({ project }: ProjectProps) {
   const { name, image, description, tech, link, code, isApp } = project
   return (
     <div className="rounded-lg bg-slate-700 flex flex-col min-h-full flex-grow">
-      <div className="relative lg:h-72 h-56 rounded-t-lg flex items-center overflow-hidden bg-slate-950">
+      <div className="relative aspect-[16/9] rounded-t-lg overflow-hidden bg-slate-950">
         <Image
           src={image}
           alt={name}
@@ -52,7 +52,7 @@ export default function Project({ project }: ProjectProps) {
             >
               {isApp ? (
                 <>
-                  App Store <FaAppStore />
+                  App <FaAppStore />
                 </>
               ) : (
                 <>

@@ -25,7 +25,7 @@ export default function IconCard({
           className="h-10 w-auto"
         />
       ) : (
-        Icon && <Icon className="h-10 w-auto text-sjsu-gold" />
+        Icon && <Icon className="h-10 w-auto text-primary" />
       )}
 
       <p className="text-white/50 truncate px-1 font-medium text-center text-sm w-full overflow-hidden">

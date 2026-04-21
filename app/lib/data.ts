@@ -72,6 +72,9 @@ import swift from '@/public/swift.png'
 import aws from '@/public/aws.png'
 import stripe from '@/public/stripe.png'
 import dumbbell from '@/public/dumbbell.png'
+import opencv from '@/public/opencv.png'
+import yolo from '@/public/yolo.png'
+import heatcheck from '@/public/heatcheck.png'
 
 export const links = [
   {
@@ -229,60 +232,48 @@ export const projects = [
     ],
     link: 'https://apps.apple.com/app/id6754656428',
     isApp: true,
-    code: null,
+    code: 'https://github.com/aross2010/spotter',
   },
   {
-    name: 'Cinefind, Web App',
-    image: cinefindWebApp,
+    name: 'Heat Check',
     description:
-      "Developed a full-stack web application for Cinefind which features a real-time dashboard of every free movie screening in a user's city.",
-    tech: [
-      {
-        src: typescript,
-        alt: 'typescript',
-      },
-      {
-        src: next,
-        alt: 'next.js',
-      },
-      {
-        src: react,
-        alt: 'react',
-      },
-      { src: tailwind, alt: 'tailwind' },
-      {
-        src: mongodb,
-        alt: 'mongodb',
-      },
-      {
-        src: stripe,
-        alt: 'stripe',
-      },
-    ],
-    link: 'https://cinefind.app',
-    code: null,
-  },
-  {
-    name: 'Cinefind, Server',
-    image: cinefindEngine,
-    description:
-      'Developed local server for Cinefind that finds every free movie screening in the U.S. and sends real-time email alerts to thousands of users.',
+      'Trained a YOLOv8 model at 96% accuracy to detect basketball shots and deployed it to a mobile app that classifies makes and misses in real time using on-device TFLite inference.',
     tech: [
       {
         src: python,
         alt: 'python',
       },
       {
-        src: selenium,
-        alt: 'selenium',
+        src: opencv,
+        alt: 'opencv',
       },
       {
-        src: mailgun,
-        alt: 'mailgun',
+        src: yolo,
+        alt: 'yolo',
+      },
+      {
+        src: typescript,
+        alt: 'typescript',
+      },
+      {
+        src: react,
+        alt: 'react native',
+      },
+      {
+        src: expo,
+        alt: 'expo',
+      },
+      {
+        src: node,
+        alt: 'node.js',
+      },
+      {
+        src: postgres,
+        alt: 'postgres',
       },
     ],
-    link: 'https://cinefind.app',
-    code: null,
+    image: heatcheck,
+    code: 'https://github.com/aross2010/heat-check',
   },
   {
     name: 'X/Twitter Bot Detector',
@@ -307,7 +298,6 @@ export const projects = [
         alt: 'pandas',
       },
     ],
-    link: null,
     code: 'https://github.com/aross2010/twitter-bot-detector',
   },
   {
@@ -337,7 +327,6 @@ export const projects = [
         alt: 'reddit',
       },
     ],
-    link: null,
     code: 'https://github.com/aross2010/vinyl-bot',
   },
   {
@@ -371,8 +360,37 @@ export const projects = [
         alt: 'spotify',
       },
     ],
-    link: null,
     code: 'https://github.com/aross2010/spotlefy',
+  },
+  {
+    // when num of projects is odd, promote other projects on larger screens, KEEP LAST
+    name: 'Additional Projects',
+    image: githubBanner,
+    description:
+      'Check out my GitHub for more projects beyond the scope of my portfolio including AI testing automation, embeddded systems, Java desktop apps, and more!',
+    tech: [
+      {
+        src: c,
+        alt: 'c',
+      },
+      {
+        src: java,
+        alt: 'java',
+      },
+      {
+        src: sql,
+        alt: 'sql',
+      },
+      {
+        src: python,
+        alt: 'python',
+      },
+      {
+        src: selenium,
+        alt: 'selenium',
+      },
+    ],
+    code: 'https://github.com/aross2010',
   },
 ]
 
@@ -385,6 +403,7 @@ export const experiences = [
     dates: 'Jun. 2024 - Aug. 2025',
     description:
       'Built and scaled Cinefind into a production web platform used by thousands of users, working full-stack on authentication, web scraping, subscriptions and payments (Stripe), automated email alerts, booking flows, automated screening RSVPs, system design, and production releases.',
+    type: 'work',
   },
   {
     title: 'B.S. Software Engineering',
@@ -394,7 +413,7 @@ export const experiences = [
     description:
       'Led various software developement projects in machine learning, AI, mobile development, web development, QA, information security, databases, and more.',
     gpa: 3.6,
-    education: true,
+    type: 'education',
   },
   {
     title: 'Software Engineer — Mobile',
@@ -404,5 +423,6 @@ export const experiences = [
     dates: 'Jul. 2025 - present',
     description:
       'Designed, developed, shipped, and maintained Spotter, a workout tracking app built for weightlifters.',
+    type: 'work',
   },
 ]
