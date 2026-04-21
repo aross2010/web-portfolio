@@ -8,6 +8,7 @@ import {
   FaLetterboxd,
   FaSquareLetterboxd,
 } from 'react-icons/fa6'
+import type { ProjectType, TimelineElement } from '@/app/lib/types'
 import { PiTennisBallFill } from 'react-icons/pi'
 import html from '@/public/html.png'
 import css from '@/public/css.png'
@@ -202,7 +203,7 @@ export const skills = [
   },
 ] as const
 
-export const projects = [
+export const projects: ProjectType[] = [
   {
     name: 'Spotter',
     image: spotter,
@@ -394,7 +395,7 @@ export const projects = [
   },
 ]
 
-export const experiences = [
+export const experiences: TimelineElement[] = [
   {
     title: 'Software Engineer',
     subtitle: 'Cinefind',
