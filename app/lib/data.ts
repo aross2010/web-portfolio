@@ -76,6 +76,9 @@ import dumbbell from '@/public/dumbbell.png'
 import opencv from '@/public/opencv.png'
 import yolo from '@/public/yolo.png'
 import heatcheck from '@/public/heatcheck.png'
+import docker from '@/public/docker.png'
+import duel from '@/public/duel.png'
+import redis from '@/public/redis.png'
 
 export const links = [
   {
@@ -177,10 +180,6 @@ export const skills = [
     image: node,
   },
   {
-    name: 'Express',
-    image: express,
-  },
-  {
     name: 'MongoDB',
     image: mongodb,
   },
@@ -189,10 +188,13 @@ export const skills = [
     image: postgres,
   },
   {
-    name: 'MySQL',
-    image: mysql,
+    name: 'Redis',
+    image: redis,
   },
-
+  {
+    name: 'Docker',
+    image: docker,
+  },
   {
     name: 'Selenium',
     image: selenium,
@@ -208,7 +210,7 @@ export const projects: ProjectType[] = [
     name: 'Spotter',
     image: spotter,
     description:
-      'Designed, developed, shipped, and maintained Spotter, a fully customizable workout tracking app on iOS built for weightlifters.',
+      'Designed, developed, shipped, and maintaineda fully customizable workout tracking app on iOS built for weightlifters.',
     tech: [
       {
         src: typescript,
@@ -223,8 +225,16 @@ export const projects: ProjectType[] = [
         alt: 'expo',
       },
       {
+        src: node,
+        alt: 'node.js',
+      },
+      {
         src: postgres,
         alt: 'postgreSQL',
+      },
+      {
+        src: redis,
+        alt: 'redis',
       },
       {
         src: tailwind,
@@ -238,7 +248,7 @@ export const projects: ProjectType[] = [
   {
     name: 'Heat Check',
     description:
-      'Trained a YOLOv8 model at 96% accuracy to detect basketball shots and deployed it to a mobile app that classifies makes and misses in real time using on-device TFLite inference.',
+      'Developed an AI basketball shot tracker that uses on-device computer vision to provide real-time feedback on shot outcome and location.',
     tech: [
       {
         src: python,
@@ -277,10 +287,43 @@ export const projects: ProjectType[] = [
     code: 'https://github.com/aross2010/heat-check',
   },
   {
+    name: 'Duel',
+    description:
+      'Built a real-time head-to-head trivia game across various categories utilizing WebSockets.',
+    image: duel,
+    code: 'https://github.com/aross2010/duel',
+    tech: [
+      {
+        src: typescript,
+        alt: 'typescript',
+      },
+      {
+        src: node,
+        alt: 'node.js',
+      },
+      {
+        src: next,
+        alt: 'next.js',
+      },
+      {
+        src: react,
+        alt: 'react',
+      },
+      {
+        src: docker,
+        alt: 'docker',
+      },
+      {
+        src: redis,
+        alt: 'redis',
+      },
+    ],
+  },
+  {
     name: 'X/Twitter Bot Detector',
     image: twitterBot,
     description:
-      'Developed a machine learning model and web app to classify X/Twitter accounts as bots or humans, using custom features, data preprocessing, and predictive analysis for high accuracy.',
+      'Developed a machine learning model and web app to classify X/Twitter accounts as bots or humans.',
     tech: [
       {
         src: python,
@@ -301,40 +344,40 @@ export const projects: ProjectType[] = [
     ],
     code: 'https://github.com/aross2010/twitter-bot-detector',
   },
-  {
-    name: 'Vinyl Bot',
-    image: vinylBot,
-    description:
-      'Built automated Python scripts on AWS EC2 to send real-time email alerts for vinyl releases by integrating with the Discogs API to monitor wantlist records.',
-    tech: [
-      {
-        src: python,
-        alt: 'python',
-      },
-      {
-        src: aws,
-        alt: 'aws',
-      },
-      {
-        src: cron,
-        alt: 'cron',
-      },
-      {
-        src: discogs,
-        alt: 'discogs',
-      },
-      {
-        src: reddit,
-        alt: 'reddit',
-      },
-    ],
-    code: 'https://github.com/aross2010/vinyl-bot',
-  },
+  // {
+  //   name: 'Vinyl Bot',
+  //   image: vinylBot,
+  //   description:
+  //     'Built automated Python scripts on AWS EC2 to send real-time email alerts for vinyl releases by integrating with the Discogs API to monitor wantlist records.',
+  //   tech: [
+  //     {
+  //       src: python,
+  //       alt: 'python',
+  //     },
+  //     {
+  //       src: aws,
+  //       alt: 'aws',
+  //     },
+  //     {
+  //       src: cron,
+  //       alt: 'cron',
+  //     },
+  //     {
+  //       src: discogs,
+  //       alt: 'discogs',
+  //     },
+  //     {
+  //       src: reddit,
+  //       alt: 'reddit',
+  //     },
+  //   ],
+  //   code: 'https://github.com/aross2010/vinyl-bot',
+  // },
   {
     name: 'Spotlefy',
     image: spotlefy,
     description:
-      'Built a web app using the Spotify API that lets users create custom Heardle-style games by importing their playlists or searching any artist or playlist to generate song snippets for guessing.',
+      "Built a web app that lets users create custom Heardle games by using playlists or an artist's catalog.",
     tech: [
       {
         src: typescript,
@@ -347,14 +390,6 @@ export const projects: ProjectType[] = [
       {
         src: next,
         alt: 'next',
-      },
-      {
-        src: tailwind,
-        alt: 'tailwind',
-      },
-      {
-        src: vercel,
-        alt: 'vercel',
       },
       {
         src: spotify,
