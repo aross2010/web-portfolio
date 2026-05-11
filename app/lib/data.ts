@@ -436,7 +436,7 @@ export const experiences: TimelineElement[] = [
     subtitle: 'Cinefind',
     link: 'https://cinefind.app',
     image: cinefindLogoC,
-    dates: 'Jun. 2024 - Aug. 2025',
+    dates: 'Jun. 2024 - May. 2026',
     description:
       'Built and scaled Cinefind into a production web platform used by thousands of users, working full-stack on authentication, web scraping, subscriptions and payments (Stripe), automated email alerts, booking flows, automated screening RSVPs, system design, and production releases.',
     type: 'work',
